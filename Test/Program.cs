@@ -12,7 +12,7 @@ namespace Test
         {
            AngerDrops.On();
             SignOfRage.On();
-
+            Console.ReadKey();
         }
     }
 }
