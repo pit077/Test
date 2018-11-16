@@ -104,7 +104,7 @@ namespace Servers
         public double MovementSpeed { get; set; }
         public double LoadingCapacity { get; set; }
         public double ConstructionUnits { get; set; }
-        public double CstConstructionUnits { get; set; }
+        public double CostConstructionUnits { get; set; }
         public double SpeedConstructionUnits { get; set; }
         public double AgainstInvestigation { get; set; }
         public double PrSteel { get; set; }

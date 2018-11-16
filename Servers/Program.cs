@@ -11,7 +11,8 @@ namespace Servers
         static void Main(string[] args)
         {
             RelicOF relicOf = new RelicOF(); 
-            relicOf.SignRage();
+            relicOf.PoisonousClaw();
+            
             Console.ReadKey();
         }
     }
