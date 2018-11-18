@@ -49,6 +49,8 @@
     <Compile Include="Marches.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RelicCastle.cs" />
+    <Compile Include="RelicDEF.cs" />
     <Compile Include="RelicOF.cs" />
   </ItemGroup>
   <ItemGroup>
