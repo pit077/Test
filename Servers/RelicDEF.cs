@@ -414,5 +414,35 @@ namespace Servers
             alHazredRetort.Day = 14;
             alHazredRetort.Lvl = 55;
         }
+        public void ChePaiSaber()
+        {
+            RelicDEF chePaiSaber = new RelicDEF();
+            chePaiSaber.NameRelic = "Сабля Че-Пая";
+            chePaiSaber.RelicType = "Элитный";
+            chePaiSaber.UnitName = "Кочевница";
+            chePaiSaber.SpeedConstructionUnits += 5;
+            chePaiSaber.Day = 7;
+            chePaiSaber.Lvl = 32;
+        }
+        public void GrowthPotion()
+        {
+            RelicDEF growthPotion = new RelicDEF();
+            growthPotion.NameRelic = "Зелье роста";
+            growthPotion.RelicType = "Элитный";
+            growthPotion.UnitName = "Голем";
+            growthPotion.SpeedConstructionUnits += 5;
+            growthPotion.Day = 7;
+            growthPotion.Lvl = 40;
+        }
+        public void MagazineMaster()
+        {
+            RelicDEF magazineMaster = new RelicDEF();
+            magazineMaster.NameRelic = "Журнал Магистра";
+            magazineMaster.RelicType = "Элитный";
+            magazineMaster.UnitName = "Шпион";
+            magazineMaster.SpeedConstructionUnits += 5;
+            magazineMaster.Day = 7;
+            magazineMaster.Lvl = 50;
+        }
     }
 }
