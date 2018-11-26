@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Армия\Пехота\BasicInfantry.cs" />
     <Compile Include="Resources.cs" />
     <Compile Include="Реликвии\BasicRelics.cs" />
     <Compile Include="ConstructionTime.cs" />

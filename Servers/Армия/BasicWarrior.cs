@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Servers
 {
-    public abstract class BasicWarrior : ConstructionTime
+    public abstract class BasicWarrior
     {
         private string type; // пехота/кавалерия/магистрат/бастеария
         private string name; // имя юнита
@@ -20,6 +20,7 @@ namespace Servers
         private double meat;  // стоимость содержания в час
         private double traverseSpeed;  // скорость перемещения
         private int constructionTime;  // время строительства
+       
         /// <summary>
         /// true - указывает на то,что воин является атакующим
         /// false - указывает на то,что воин является защитником
@@ -143,7 +144,14 @@ namespace Servers
         public string Type { get; set; }
         public string Name { get; set; }
         public double Investigation { get; set; }
-        public double Attack { get; set; }
+        public double Attack {
+            get { return attack; } // атака
+            set
+            {
+                attack = value;
+                ConstructionTime = attack > 0 ? ConstructionTime - TimeSpan.FromSeconds(1) : ConstructionTime + TimeSpan.FromSeconds(1);
+            }
+        }
         public double Infantry { get; set; }
         public double Cavalry { get; set; }
         public double Magistrate { get; set; }
