@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 /// </summary>
 namespace Servers
 {
-    class RelicOF : BasicRelics
+   public class RelicOF : BasicRelics
     {
         public void AngerDrop()
         {
@@ -21,6 +21,7 @@ namespace Servers
             angerDrop.Attack += 4;
             angerDrop.Day = 14;
             angerDrop.Lvl = 24;           
+            
         }        
         public void SignRage()
         {
@@ -443,5 +444,7 @@ namespace Servers
             poisonousClaw.Attack += 7.5;
             poisonousClaw.Lvl = 55;
         }
+
+     
     }
 }

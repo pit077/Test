@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Servers
 {
-    class RelicDEF:BasicRelics
+   public class RelicDEF:BasicRelics
     {
         public void ShlemBrana()
         {

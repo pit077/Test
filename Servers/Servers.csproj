@@ -43,18 +43,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BasicRelics.cs" />
+    <Compile Include="Resources.cs" />
+    <Compile Include="Реликвии\BasicRelics.cs" />
     <Compile Include="ConstructionTime.cs" />
     <Compile Include="Impirium.cs" />
-    <Compile Include="Marches.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RelicCastle.cs" />
-    <Compile Include="RelicDEF.cs" />
-    <Compile Include="RelicOF.cs" />
+    <Compile Include="Реликвии\RelicCastle.cs" />
+    <Compile Include="Реликвии\RelicDEF.cs" />
+    <Compile Include="Реликвии\RelicOF.cs" />
+    <Compile Include="Армия\BasicWarrior.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

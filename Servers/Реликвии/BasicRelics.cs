@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Servers
 {
-    class BasicRelics : ConstructionTime
+    public class BasicRelics : ConstructionTime
     {
         //BasicRelics basicRelics = new BasicRelics("имя реликвии", "тип реликвии", "тип юнита", 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0);
         private string nameRelic = " имя реликвии"; // имя реликвии
@@ -26,11 +26,22 @@ namespace Servers
         private double speedResearches = 0.0d; // Скорость исследований:
         private byte lvl = 0; // Необходимый уровень:
 
+        public BasicRelics(ConstructionTime constructionTime)
+        {
+            ConstructionTime =
+                TimeSpan.FromDays(constructionTime.Day)
+                + TimeSpan.FromHours(constructionTime.Hour)
+                + TimeSpan.FromMinutes(constructionTime.Min)
+                + TimeSpan.FromSeconds(constructionTime.Sec);
+        }
+
+        public TimeSpan ConstructionTime { get; private set; }
+
 
         public BasicRelics(string nameRrelic, string relicType, string unitName, double attack, double protection,
             double sector, double movementSpeed, double loadingCapacity, double constructionUnits,
          double speedConstructionUnits, double againstInvestigation, double prSteel,
-            double prGold, double prMeat, double speedResearches, byte lvl):this()
+            double prGold, double prMeat, double speedResearches, byte lvl)
         {
             this.nameRelic = nameRrelic;
             this.relicType = relicType;
@@ -73,7 +84,7 @@ namespace Servers
 
         public void BasicRelicsM()
         {
-            string nameRelic; // имя реликвии
+            string nameRelic= "имя реликвии"; // имя реликвии
             string relicType = "тип реликвии"; // тип реликвии
             string unitName = "тип юнита"; // к какому типу юнита принадлежит реликвия
             double attack = 0.0d; // процент атаки
@@ -91,10 +102,12 @@ namespace Servers
             byte lvl = 0; // необходимый уровень
         }
 
-        public string NameRelic { get; set; }
-        public string RelicType { get; set; }
-        public string UnitName { get; set; }
-        public double Attack { get; set; }
+        #region Getters
+
+        public string NameRelic { get; set; }       
+        public string RelicType { get; set; }       
+        public string UnitName { get; set; }        
+        public double Attack { get; set; }       
         public double Protection { get; set; }
         public double Sector { get; set; }
         public double MovementSpeed { get; set; }
@@ -107,5 +120,10 @@ namespace Servers
         public double PrMeat { get; set; }
         public double SpeedResearches { get; set; }
         public byte Lvl { get; set; }
+
+        #endregion
+
+
+       
     }
 }
