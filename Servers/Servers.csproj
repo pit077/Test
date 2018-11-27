@@ -43,6 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Армия\Бестиария\BasicBestiary.cs" />
+    <Compile Include="Армия\Магистрат\BasicMagistrate.cs" />
+    <Compile Include="Армия\Кавалерия\BasicCavalry.cs" />
     <Compile Include="Армия\Пехота\BasicInfantry.cs" />
     <Compile Include="Resources.cs" />
     <Compile Include="Реликвии\BasicRelics.cs" />
