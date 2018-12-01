@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Servers
 {
-    public abstract class BasicWarrior
+    public abstract class BasicWarrior : Resources
     {
         private string type; // пехота/кавалерия/магистрат/бастеария
         private string name; // имя юнита
@@ -37,114 +37,13 @@ namespace Servers
         }
 
         public TimeSpan ConstructionTime { get; private set; }
-        #region GETTERS
-        public string GETtype()
-        {
-            return type;
-        }
-        public string GETname()
-        {
-            return name;
-        }
-        public double GETinvestigation()
-        {
-            return investigation;
-        }
-        public double GETattack()
-        {
-            return attack;
-        }
-        public double GETinfantry()
-        {
-            return infantry;
-        }
-        public double GETcavalry()
-        {
-            return cavalry;
-        }
-        public double GETmagistrate()
-        {
-            return magistrate;
-        }
-        public double GETbestiary()
-        {
-            return bestiary;
-        }
-        public double GETresources()
-        {
-            return resources;
-        }
-        public double GETmeat()
-        {
-            return meat;
-        }
-        public double GETtraverseSpeed()
-        {
-            return traverseSpeed;
-        }
-        public int GETtime()
-        {
-            return constructionTime;
-        }
+        
 
-        #endregion
-
-        #region SETTERS
-        public void SETtype(string Type)
+        public string Type { get { return type; } set { type = value; } }
+        public string Name { get { return name; }set { name = value; } }
+        public double Investigation { get { return investigation; } set { investigation = value; } }
+        public double Attack
         {
-            type = Type;
-        }
-        public void SETname(string Name)
-        {
-            name = Name;
-        }
-        public void SETinvestigation(double Investigation)
-        {
-            investigation = Investigation;
-        }
-        public void SETattack(double Attack)
-        {
-            attack = Attack;
-        }
-        public void SETinfantry(double Infantry)
-        {
-            infantry = Infantry;
-        }
-        public void SETcavalry(double Cavalry)
-        {
-            cavalry = Cavalry;
-        }
-        public void SETmagistrate(double Magistrate)
-        {
-            magistrate = Magistrate;
-        }
-        public void SETbestiary(double Bestiary)
-        {
-            bestiary = Bestiary;
-        }
-        public void SETresources(double Resources)
-        {
-            resources = Resources;
-        }
-        public void SETmeat(double Meat)
-        {
-            meat = Meat;
-        }
-        public void SETtraverseSpeed(double TraverseSpeed)
-        {
-            traverseSpeed = TraverseSpeed;
-        }
-        public void SETconstructionTime(int ConstructionTime)
-        {
-            constructionTime = ConstructionTime;
-        }
-
-        #endregion
-
-        public string Type { get; set; }
-        public string Name { get; set; }
-        public double Investigation { get; set; }
-        public double Attack {
             get { return attack; } // атака
             set
             {
@@ -152,28 +51,29 @@ namespace Servers
                 ConstructionTime = attack > 0 ? ConstructionTime - TimeSpan.FromSeconds(1) : ConstructionTime + TimeSpan.FromSeconds(1);
             }
         }
-        public double Infantry { get; set; }
-        public double Cavalry { get; set; }
-        public double Magistrate { get; set; }
-        public double Bestiary { get; set; }
-        public double Resources { get; set; }
-        public double Meat { get; set; }
-        public double TraverseSpeed { get; set; }
+        public double Infantry { get { return infantry; } set { infantry = value; } }
+        public double Cavalry { get { return cavalry; } set { cavalry = value; } }
+        public double Magistrate { get { return magistrate; } set { magistrate = value; } }
+        public double Bestiary { get { return bestiary; } set { bestiary = value; } }
+        public double Resources { get { return resources; } set { resources = value; } }
+        public double Meat { get { return meat; } set { meat = value; } }
+        public double TraverseSpeed { get { return traverseSpeed; } set { traverseSpeed = value; } }
+        //public int ConstructionTime { get { return constructionTime; } set { constructionTime = value; } }
 
         public override string ToString()
         {
-            string warrior = string.Format(this.GetType().Name + " :  \nТип - {0}"
-                                                                   + "\nИмя- {1}"
-                                                                   + "\nРазведка - {2}"
-                                                                   + "\nАтака - {3}"
-                                                                   + "\nЗащита от пехоты - {4}"
-                                                                   + "\nЗащита от кавалерии - {5}"
-                                                                   + "\nЗащита от магистрата - {6}"
-                                                                   + "\nЗащита от бастерии - {7}"
-                                                                   + "\nНесет ресурсов при грабеже - {8}"
-                                                                   + "\nСтоимость содержания в час - {9}"
-                                                                   + "\nСкорость движения - {10}"
-                                                                   + "\nВремя строительства - {11}",
+            string warrior = string.Format(this.GetType().Name + " :  \nТип: {0}"
+                                                                   + "\nИмя: {1}"
+                                                                   + "\nРазведка: {2}"
+                                                                   + "\nАтака: {3}"
+                                                                   + "\nЗащита от пехоты: {4}"
+                                                                   + "\nЗащита от кавалерии: {5}"
+                                                                   + "\nЗащита от магистрата: {6}"
+                                                                   + "\nЗащита от бастерии: {7}"
+                                                                   + "\nНесет ресурсов при грабеже: {8}"
+                                                                   + "\nСтоимость содержания в час: {9}"
+                                                                   + "\nСкорость движения: {10}"
+                                                                   + "\nВремя строительства: {11}",
                                                                                                  type,
                                                                                                  name,
                                                                                                  investigation,
@@ -187,10 +87,8 @@ namespace Servers
                                                                                                  traverseSpeed,
                                                                                                  ConstructionTime);
             return warrior;
-
         }
 
-
-
+        
     }
 }

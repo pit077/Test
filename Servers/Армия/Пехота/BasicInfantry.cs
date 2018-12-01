@@ -152,7 +152,6 @@ namespace Servers
 
 
         #endregion
-
         #region Имперский патриарх
         public class ImperialPatriarch : BasicInfantry
         {
