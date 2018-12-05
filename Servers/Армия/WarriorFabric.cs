@@ -1107,30 +1107,731 @@ namespace Servers
         #endregion
         #endregion
 
-
-
-
         #region Кавалерия
+        #region Кочевница
+        public BasicCavalry.Nomad[] CreateNomad(int count)
+        {
+            BasicCavalry.Nomad[] nomads = new BasicCavalry.Nomad[count];
 
+            for (int k = 0; k < count; k++)
+            {
+                BasicCavalry.Nomad nomad = new BasicCavalry.Nomad(new ConstructionTime() { Min = 19, Sec = 1 });
 
+                nomad.Type = "Кавалерия";
+                nomad.Name = "Кочевница";
+                nomad.Attack = 40;
+                nomad.Infantry = 130;
+                nomad.Cavalry = 170;
+                nomad.Magistrate = 170;
+                nomad.Bestiary = 130;
+                nomad.Resources = 117;
+                nomad.Meat = 2;
+                nomad.TraverseSpeed = 18;
+                nomad.gold = 880;
+                nomad.steel = 350;
+                nomad.meats = 530;
+                nomad.sapphires = 22;
 
+                nomads[k] = nomad;
+
+            }
+            return nomads;
+        }
+        #endregion
+        #region Рыцарь
+        public BasicCavalry.Knight[] CreateKnight(int count)
+        {
+            BasicCavalry.Knight[] knights = new BasicCavalry.Knight[count];
+
+            for (int k = 0; k < count; k++)
+            {
+                BasicCavalry.Knight knight = new BasicCavalry.Knight(new ConstructionTime() { Min = 30, Sec = 1 });
+
+                knight.Type = "Кавалерия";
+                knight.Name = "Рыцарь";
+                knight.Attack = 240;
+                knight.Infantry = 30;
+                knight.Cavalry = 80;
+                knight.Magistrate = 30;
+                knight.Bestiary = 30;
+                knight.Resources = 145;
+                knight.Meat = 2;
+                knight.TraverseSpeed = 18;
+                knight.gold = 650;
+                knight.steel = 1050;
+                knight.meats = 530;
+                knight.sapphires = 34;
+
+                knights[k] = knight;
+            }
+            return knights;
+        }
+        #endregion
+        #region Варвар
+        public BasicCavalry.Barbarian[] CreateBarbarian(int count)
+        {
+            BasicCavalry.Barbarian[] barbarians = new BasicCavalry.Barbarian[count];
+
+            for (int k = 0; k < count; k++)
+            {
+                BasicCavalry.Barbarian barbarian = new BasicCavalry.Barbarian(new ConstructionTime() { Min = 19, Sec = 1 });
+
+                barbarian.Type = "Кавалерия";
+                barbarian.Name = "Варвар";
+                barbarian.Attack = 240;
+                barbarian.Infantry = 30;
+                barbarian.Cavalry = 80;
+                barbarian.Magistrate = 30;
+                barbarian.Bestiary = 30;
+                barbarian.Resources = 145;
+                barbarian.Meat = 2;
+                barbarian.TraverseSpeed = 18;
+                barbarian.gold = 950;
+                barbarian.steel = 570;
+                barbarian.meats = 380;
+                barbarian.sapphires = 22;
+
+                barbarians[k] = barbarian;
+            }
+            return barbarians;
+        }
+        #endregion
+        #region Грандлорд
+        public BasicCavalry.Grandlord[] CreateGrandlord(int count)
+        {
+            BasicCavalry.Grandlord[] grandlords = new BasicCavalry.Grandlord[count];
+
+            for (int k = 0; k < count; k++)
+            {
+                BasicCavalry.Grandlord grandlord = new BasicCavalry.Grandlord(new ConstructionTime() { Min = 45, Sec = 1 });
+
+                grandlord.Type = "Кавалерия";
+                grandlord.Name = "Грандлорд";
+                grandlord.Attack = 360;
+                grandlord.Infantry = 80;
+                grandlord.Cavalry = 30;
+                grandlord.Magistrate = 30;
+                grandlord.Bestiary = 30;
+                grandlord.Resources = 239;
+                grandlord.Meat = 2;
+                grandlord.TraverseSpeed = 12;
+                grandlord.gold = 720;
+                grandlord.steel = 1800;
+                grandlord.meats = 1000;
+                grandlord.sapphires = 51;
+
+                grandlords[k] = grandlord;
+            }
+            return grandlords;
+        }
+        #endregion
+        #region Наездница
+        public BasicCavalry.Equestrian[] CreateEquestrian(int count)
+        {
+            BasicCavalry.Equestrian[] equestrians = new BasicCavalry.Equestrian[count];
+
+            for (int k = 0; k < count; k++)
+            {
+                BasicCavalry.Equestrian equestrian = new BasicCavalry.Equestrian(new ConstructionTime() { Min = 45, Sec = 1 });
+
+                equestrian.Type = "Кавалерия";
+                equestrian.Name = "Наездница";
+                equestrian.Attack = 360;
+                equestrian.Infantry = 30;
+                equestrian.Cavalry = 40;
+                equestrian.Magistrate = 40;
+                equestrian.Bestiary = 40;
+                equestrian.Resources = 250;
+                equestrian.Meat = 2;
+                equestrian.TraverseSpeed = 20;
+                equestrian.gold = 1200;
+                equestrian.steel = 2100;
+                equestrian.meats = 2100;
+                equestrian.sapphires = 51; // уточнить
+
+                equestrians[k] = equestrian;
+            }
+            return equestrians;
+        }
+        #endregion
+        #region Рейтар
+        public BasicCavalry.Reytar[] CreateReytar(int count)
+        {
+            BasicCavalry.Reytar[] reytars = new BasicCavalry.Reytar[count];
+
+            for (int k = 0; k < count; k++)
+            {
+                BasicCavalry.Reytar reytar = new BasicCavalry.Reytar(new ConstructionTime() { Min = 23, Sec = 1 });
+
+                reytar.Type = "Кавалерия";
+                reytar.Name = "Рейтар";
+                reytar.Attack = 50;
+                reytar.Infantry = 150;
+                reytar.Cavalry = 150;
+                reytar.Magistrate = 150;
+                reytar.Bestiary = 150;
+                reytar.Resources = 117;
+                reytar.Meat = 2;
+                reytar.TraverseSpeed = 24;
+                reytar.amuletsMary = 445;
+                reytar.sapphires = 0; // уточнить
+
+                reytars[k] = reytar;
+            }
+            return reytars;
+        }
+        #endregion
+        #region Жрица
+        public BasicCavalry.Priestess[] CreatePriestess(int count)
+        {
+            BasicCavalry.Priestess[] priestesss = new BasicCavalry.Priestess[count];
+
+            for (int k = 0; k < count; k++)
+            {
+                BasicCavalry.Priestess priestess = new BasicCavalry.Priestess(new ConstructionTime() { Min = 54, Sec = 1 });
+
+                priestess.Type = "Кавалерия";
+                priestess.Name = "Жрица";
+                priestess.Attack = 360;
+                priestess.Infantry = 80;
+                priestess.Cavalry = 80;
+                priestess.Magistrate = 100;
+                priestess.Bestiary = 100;
+                priestess.Resources = 239;
+                priestess.Meat = 2;
+                priestess.TraverseSpeed = 25;
+                priestess.amuletsMary = 940;
+                priestess.sapphires = 0; // уточнить
+
+                priestesss[k] = priestess;
+            }
+            return priestesss;
+        }
         #endregion
 
+        #region Имперская кочевница
+        public BasicCavalry.ImperialNomad[] CreateImperialNomad(int count)
+        {
+            BasicCavalry.ImperialNomad[] imperialNomads = new BasicCavalry.ImperialNomad[count];
 
+            for (int k = 0; k < count; k++)
+            {
+                BasicCavalry.ImperialNomad imperialNomad = new BasicCavalry.ImperialNomad(new ConstructionTime() { Min = 19, Sec = 1 });
 
+                imperialNomad.Type = "Кавалерия";
+                imperialNomad.Name = "Имперская кочевница";
+                imperialNomad.Attack = 40;
+                imperialNomad.Infantry = 130;
+                imperialNomad.Cavalry = 170;
+                imperialNomad.Magistrate = 170;
+                imperialNomad.Bestiary = 130;
+                imperialNomad.Resources = 117;
+                imperialNomad.Meat = 2;
+                imperialNomad.TraverseSpeed = 18;
+                imperialNomad.gold = 264;
+                imperialNomad.steel = 105;
+                imperialNomad.meats = 159;
+                imperialNomad.sapphires = 22;
 
+                imperialNomads[k] = imperialNomad;
 
+            }
+            return imperialNomads;
+        }
+        #endregion
+        #region Имперский рыцарь
+        public BasicCavalry.ImperialKnight[] CreateImperialKnight(int count)
+        {
+            BasicCavalry.ImperialKnight[] imperialKnights = new BasicCavalry.ImperialKnight[count];
+
+            for (int k = 0; k < count; k++)
+            {
+                BasicCavalry.ImperialKnight imperialKnight = new BasicCavalry.ImperialKnight(new ConstructionTime() { Min = 30, Sec = 1 });
+
+                imperialKnight.Type = "Кавалерия";
+                imperialKnight.Name = "Имперский рыцарь";
+                imperialKnight.Attack = 240;
+                imperialKnight.Infantry = 30;
+                imperialKnight.Cavalry = 80;
+                imperialKnight.Magistrate = 30;
+                imperialKnight.Bestiary = 30;
+                imperialKnight.Resources = 145;
+                imperialKnight.Meat = 2;
+                imperialKnight.TraverseSpeed = 18;
+                imperialKnight.gold = 195;
+                imperialKnight.steel = 324;
+                imperialKnight.meats = 130;
+                imperialKnight.sapphires = 34;
+
+                imperialKnights[k] = imperialKnight;
+
+            }
+            return imperialKnights;
+        }
+        #endregion
+        #region Имперский варвар
+        public BasicCavalry.ImperialBarbarian[] CreateImperialBarbarian(int count)
+        {
+            BasicCavalry.ImperialBarbarian[] imperialBarbarians = new BasicCavalry.ImperialBarbarian[count];
+
+            for (int k = 0; k < count; k++)
+            {
+                BasicCavalry.ImperialBarbarian imperialBarbarian = new BasicCavalry.ImperialBarbarian(new ConstructionTime() { Min = 19, Sec = 1 });
+
+                imperialBarbarian.Type = "Кавалерия";
+                imperialBarbarian.Name = "Имперский варвар";
+                imperialBarbarian.Attack = 50;
+                imperialBarbarian.Infantry = 170;
+                imperialBarbarian.Cavalry = 170;
+                imperialBarbarian.Magistrate = 130;
+                imperialBarbarian.Bestiary = 130;
+                imperialBarbarian.Resources = 127;
+                imperialBarbarian.Meat = 2;
+                imperialBarbarian.TraverseSpeed = 12;
+                imperialBarbarian.gold = 285;
+                imperialBarbarian.steel = 171;
+                imperialBarbarian.meats = 114;
+                imperialBarbarian.sapphires = 22;
+
+                imperialBarbarians[k] = imperialBarbarian;
+            }
+            return imperialBarbarians;
+        }
+        #endregion
+        #region Имперский грандлорд
+        public BasicCavalry.ImperialGrandlord[] CreateImperialGrandlord(int count)
+        {
+            BasicCavalry.ImperialGrandlord[] imperialGrandlords = new BasicCavalry.ImperialGrandlord[count];
+
+            for (int k = 0; k < count; k++)
+            {
+                BasicCavalry.ImperialGrandlord imperialGrandlord = new BasicCavalry.ImperialGrandlord(new ConstructionTime() { Min = 45, Sec = 1 });
+
+                imperialGrandlord.Type = "Кавалерия";
+                imperialGrandlord.Name = "Имперский грандлорд";
+                imperialGrandlord.Attack = 360;
+                imperialGrandlord.Infantry = 80;
+                imperialGrandlord.Cavalry = 30;
+                imperialGrandlord.Magistrate = 30;
+                imperialGrandlord.Bestiary = 30;
+                imperialGrandlord.Resources = 239;
+                imperialGrandlord.Meat = 2;
+                imperialGrandlord.TraverseSpeed = 12;
+                imperialGrandlord.gold = 216;
+                imperialGrandlord.steel = 540;
+                imperialGrandlord.meats = 300;
+                imperialGrandlord.sapphires = 51;
+
+                imperialGrandlords[k] = imperialGrandlord;
+            }
+            return imperialGrandlords;
+        }
+        #endregion
+        #region Имперская наездница
+        public BasicCavalry.ImperialEquestrian[] CreateImperialEquestrian(int count)
+        {
+            BasicCavalry.ImperialEquestrian[] imperialEquestrians = new BasicCavalry.ImperialEquestrian[count];
+
+            for (int k = 0; k < count; k++)
+            {
+                BasicCavalry.ImperialEquestrian imperialEquestrian = new BasicCavalry.ImperialEquestrian(new ConstructionTime() { Min = 45, Sec = 1 });
+
+                imperialEquestrian.Type = "Кавалерия";
+                imperialEquestrian.Name = "Имперская наездница";
+                imperialEquestrian.Attack = 360;
+                imperialEquestrian.Infantry = 30;
+                imperialEquestrian.Cavalry = 40;
+                imperialEquestrian.Magistrate = 40;
+                imperialEquestrian.Bestiary = 40;
+                imperialEquestrian.Resources = 250;
+                imperialEquestrian.Meat = 2;
+                imperialEquestrian.TraverseSpeed = 20;
+                imperialEquestrian.gold = 400;
+                imperialEquestrian.steel = 700;
+                imperialEquestrian.meats = 700;
+                imperialEquestrian.sapphires = 0; // уточнить
+
+                imperialEquestrians[k] = imperialEquestrian;
+            }
+            return imperialEquestrians;
+        }
+        #endregion
+        #region Имперский рейтар
+        public BasicCavalry.ImperialReytar[] CreateImperialReytar(int count)
+        {
+            BasicCavalry.ImperialReytar[] imperialReytars = new BasicCavalry.ImperialReytar[count];
+
+            for (int k = 0; k < count; k++)
+            {
+                BasicCavalry.ImperialReytar imperialReytar = new BasicCavalry.ImperialReytar(new ConstructionTime() { Min = 23, Sec = 1 });
+
+                imperialReytar.Type = "Кавалерия";
+                imperialReytar.Name = "Имперский рейтар";
+                imperialReytar.Attack = 50;
+                imperialReytar.Infantry = 150;
+                imperialReytar.Cavalry = 150;
+                imperialReytar.Magistrate = 150;
+                imperialReytar.Bestiary = 150;
+                imperialReytar.Resources = 117;
+                imperialReytar.Meat = 2;
+                imperialReytar.TraverseSpeed = 24;
+                imperialReytar.amuletsMary = 147;
+                imperialReytar.sapphires = 0; // уточнить
+
+                imperialReytars[k] = imperialReytar;
+            }
+            return imperialReytars;
+        }
+        #endregion
+        #region Имперская жрица
+        public BasicCavalry.ImperialPriestess[] CreateImperialPriestess(int count)
+        {
+            BasicCavalry.ImperialPriestess[] imperialPriestesss = new BasicCavalry.ImperialPriestess[count];
+
+            for (int k = 0; k < count; k++)
+            {
+                BasicCavalry.ImperialPriestess imperialPriestess = new BasicCavalry.ImperialPriestess(new ConstructionTime() { Min = 54, Sec = 1 });
+
+                imperialPriestess.Type = "Кавалерия";
+                imperialPriestess.Name = "Имперская жрица";
+                imperialPriestess.Attack = 360;
+                imperialPriestess.Infantry = 80;
+                imperialPriestess.Cavalry = 80;
+                imperialPriestess.Magistrate = 100;
+                imperialPriestess.Bestiary = 100;
+                imperialPriestess.Resources = 239;
+                imperialPriestess.Meat = 2;
+                imperialPriestess.TraverseSpeed = 25;
+                imperialPriestess.amuletsMary = 310;
+                imperialPriestess.sapphires = 0; // уточнить
+
+                imperialPriestesss[k] = imperialPriestess;
+            }
+            return imperialPriestesss;
+        }
+        #endregion
+
+        #region Темная Кочевница
+        public BasicCavalry.DarkNomad[] CreateDarkNomad(int count)
+        {
+            BasicCavalry.DarkNomad[] darkNomads = new BasicCavalry.DarkNomad[count];
+
+            for (int k = 0; k < count; k++)
+            {
+                BasicCavalry.DarkNomad darkNomad = new BasicCavalry.DarkNomad(new ConstructionTime() { Min = 0, Sec = 1 });
+
+                darkNomad.Type = "Кавалерия";
+                darkNomad.Name = "Темная Кочевница";
+                darkNomad.Attack = 42;
+                darkNomad.Infantry = 136;
+                darkNomad.Cavalry = 178;
+                darkNomad.Magistrate = 178;
+                darkNomad.Bestiary = 136;
+                darkNomad.Resources = 117;
+                darkNomad.Meat = 1;
+                darkNomad.TraverseSpeed = 18;
+                darkNomad.sapphires = 22;
+
+                darkNomads[k] = darkNomad;
+
+            }
+            return darkNomads;
+        }
+        #endregion
+        #region Темный Рыцарь
+        public BasicCavalry.DarkKnight[] CreateDarkKnight(int count)
+        {
+            BasicCavalry.DarkKnight[] darkKnights = new BasicCavalry.DarkKnight[count];
+
+            for (int k = 0; k < count; k++)
+            {
+                BasicCavalry.DarkKnight darkKnight = new BasicCavalry.DarkKnight(new ConstructionTime() { Min = 0, Sec = 1 });
+
+                darkKnight.Type = "Кавалерия";
+                darkKnight.Name = "Темный Рыцарь";
+                darkKnight.Attack = 252;
+                darkKnight.Infantry = 32;
+                darkKnight.Cavalry = 84;
+                darkKnight.Magistrate = 32;
+                darkKnight.Bestiary = 32;
+                darkKnight.Resources = 145;
+                darkKnight.Meat = 1;
+                darkKnight.TraverseSpeed = 18;
+                darkKnight.sapphires = 34;
+
+                darkKnights[k] = darkKnight;
+
+            }
+            return darkKnights;
+        }
+        #endregion
+        #region Темный Варвар
+        public BasicCavalry.DarkBarbarian[] CreateDarkBarbarian(int count)
+        {
+            BasicCavalry.DarkBarbarian[] darkBarbarians = new BasicCavalry.DarkBarbarian[count];
+
+            for (int k = 0; k < count; k++)
+            {
+                BasicCavalry.DarkBarbarian darkBarbarian = new BasicCavalry.DarkBarbarian(new ConstructionTime() { Min = 0, Sec = 1 });
+
+                darkBarbarian.Type = "Кавалерия";
+                darkBarbarian.Name = "Темный Варвар";
+                darkBarbarian.Attack = 52;
+                darkBarbarian.Infantry = 178;
+                darkBarbarian.Cavalry = 178;
+                darkBarbarian.Magistrate = 136;
+                darkBarbarian.Bestiary = 136;
+                darkBarbarian.Resources = 127;
+                darkBarbarian.Meat = 1;
+                darkBarbarian.TraverseSpeed = 12;
+                darkBarbarian.sapphires = 22;
+
+                darkBarbarians[k] = darkBarbarian;
+
+            }
+            return darkBarbarians;
+        }
+        #endregion
+        #region Темный Грандлорд
+        public BasicCavalry.DarkGrandlord[] CreateDarkGrandlord(int count)
+        {
+            BasicCavalry.DarkGrandlord[] darkGrandlords = new BasicCavalry.DarkGrandlord[count];
+
+            for (int k = 0; k < count; k++)
+            {
+                BasicCavalry.DarkGrandlord darkGrandlord = new BasicCavalry.DarkGrandlord(new ConstructionTime() { Min = 0, Sec = 1 });
+
+                darkGrandlord.Type = "Кавалерия";
+                darkGrandlord.Name = "Темный Грандлорд";
+                darkGrandlord.Attack = 378;
+                darkGrandlord.Infantry = 84;
+                darkGrandlord.Cavalry = 32;
+                darkGrandlord.Magistrate = 32;
+                darkGrandlord.Bestiary = 32;
+                darkGrandlord.Resources = 239;
+                darkGrandlord.Meat = 1;
+                darkGrandlord.TraverseSpeed = 12;
+                darkGrandlord.sapphires = 51;
+
+                darkGrandlords[k] = darkGrandlord;
+
+            }
+            return darkGrandlords;
+        }
+        #endregion
+        #region Темная Наездница
+        public BasicCavalry.DarkEquestrian[] CreateDarkEquestrian(int count)
+        {
+            BasicCavalry.DarkEquestrian[] darkEquestrians = new BasicCavalry.DarkEquestrian[count];
+
+            for (int k = 0; k < count; k++)
+            {
+                BasicCavalry.DarkEquestrian darkEquestrian = new BasicCavalry.DarkEquestrian(new ConstructionTime() { Min = 0, Sec = 1 });
+
+                darkEquestrian.Type = "Кавалерия";
+                darkEquestrian.Name = "Темная Наездница";
+                darkEquestrian.Attack = 378;
+                darkEquestrian.Infantry = 32;
+                darkEquestrian.Cavalry = 42;
+                darkEquestrian.Magistrate = 42;
+                darkEquestrian.Bestiary = 42;
+                darkEquestrian.Resources = 250;
+                darkEquestrian.Meat = 1;
+                darkEquestrian.TraverseSpeed = 25;
+                darkEquestrian.sapphires = 0; // уточнить
+
+                darkEquestrians[k] = darkEquestrian;
+
+            }
+            return darkEquestrians;
+        }
+        #endregion
+
+        #region Возрожденный рыцарь
+        public BasicCavalry.RevivedKnight[] CreateRevivedKnight(int count)
+        {
+            BasicCavalry.RevivedKnight[] revivedKnights = new BasicCavalry.RevivedKnight[count];
+
+            for (int k = 0; k < count; k++)
+            {
+                BasicCavalry.RevivedKnight revivedKnight = new BasicCavalry.RevivedKnight(new ConstructionTime() { Min = 0, Sec = 1 });
+
+                revivedKnight.Type = "Кавалерия";
+                revivedKnight.Name = "Возрожденный рыцарь";
+                revivedKnight.Attack = 250;
+                revivedKnight.Infantry = 40;
+                revivedKnight.Cavalry = 50;
+                revivedKnight.Magistrate = 40;
+                revivedKnight.Bestiary = 40;
+                revivedKnight.Resources = 150;
+                revivedKnight.Meat = 1;
+                revivedKnight.TraverseSpeed = 18;
+                revivedKnight.sapphires = 34; // уточнить
+
+                revivedKnights[k] = revivedKnight;
+
+            }
+            return revivedKnights;
+        }
+        #endregion
+        #region Возрожденный варвар
+        public BasicCavalry.RevivedBarbarian[] CreateRevivedBarbarian(int count)
+        {
+            BasicCavalry.RevivedBarbarian[] revivedBarbarians = new BasicCavalry.RevivedBarbarian[count];
+
+            for (int k = 0; k < count; k++)
+            {
+                BasicCavalry.RevivedBarbarian revivedBarbarian = new BasicCavalry.RevivedBarbarian(new ConstructionTime() { Min = 0, Sec = 1 });
+
+                revivedBarbarian.Type = "Кавалерия";
+                revivedBarbarian.Name = "Возрожденный варвар";
+                revivedBarbarian.Attack = 250;
+                revivedBarbarian.Infantry = 40;
+                revivedBarbarian.Cavalry = 50;
+                revivedBarbarian.Magistrate = 40;
+                revivedBarbarian.Bestiary = 40;
+                revivedBarbarian.Resources = 150;
+                revivedBarbarian.Meat = 1;
+                revivedBarbarian.TraverseSpeed = 18;
+                revivedBarbarian.sapphires = 34; // уточнить
+
+                revivedBarbarians[k] = revivedBarbarian;
+
+            }
+            return revivedBarbarians;
+        }
+        #endregion
+
+        #region Рейдер
+        public BasicCavalry.Raider[] CreateRaider(int count)
+        {
+            BasicCavalry.Raider[] raiders = new BasicCavalry.Raider[count];
+
+            for (int k = 0; k < count; k++)
+            {
+                BasicCavalry.Raider raider = new BasicCavalry.Raider(new ConstructionTime() { Min = 0, Sec = 1 });
+
+                raider.Type = "Кавалерия";
+                raider.Name = "Рейдер";
+                raider.Attack = 40;
+                raider.Infantry = 40;
+                raider.Cavalry = 120;
+                raider.Magistrate = 40;
+                raider.Bestiary = 40;
+                raider.Resources = 80;
+
+                raiders[k] = raider;
+
+            }
+            return raiders;
+        }
+        #endregion
+
+        #region Пегас
+        public BasicCavalry.Pegasus[] CreatePegasus(int count)
+        {
+            BasicCavalry.Pegasus[] pegasuss = new BasicCavalry.Pegasus[count];
+
+            for (int k = 0; k < count; k++)
+            {
+                BasicCavalry.Pegasus pegasus = new BasicCavalry.Pegasus(new ConstructionTime() { Min = 0, Sec = 1 });
+
+                pegasus.Type = "Кавалерия";
+                pegasus.Name = "Пегас";
+                pegasus.Attack = 1008;
+                pegasus.Infantry = 224;
+                pegasus.Cavalry = 84;
+                pegasus.Magistrate = 84;
+                pegasus.Bestiary = 84;
+                pegasus.Resources = 1000;
+                pegasus.Meat = 4;
+                pegasus.TraverseSpeed = 27;
+                pegasus.sapphires = 518;
+
+                pegasuss[k] = pegasus;
+
+            }
+            return pegasuss;
+        }
+        #endregion
+        #region Элефант
+        public BasicCavalry.Elephant[] CreateElephant(int count)
+        {
+            BasicCavalry.Elephant[] elephants = new BasicCavalry.Elephant[count];
+
+            for (int k = 0; k < count; k++)
+            {
+                BasicCavalry.Elephant elephant = new BasicCavalry.Elephant(new ConstructionTime() { Min = 0, Sec = 1 });
+
+                elephant.Type = "Кавалерия";
+                elephant.Name = "Элефант";
+                elephant.Attack = 210;
+                elephant.Infantry = 714;
+                elephant.Cavalry = 714;
+                elephant.Magistrate = 546;
+                elephant.Bestiary = 546;
+                elephant.Resources = 1000;
+                elephant.Meat = 2;
+                elephant.TraverseSpeed = 27;
+                elephant.sapphires = 255;
+
+                elephants[k] = elephant;
+
+            }
+            return elephants;
+        }
+        #endregion
+        #endregion
 
         #region Магистрат
+        #region Крушитель
+
+        #endregion
+
+        #region Голем
+
+        #endregion
+
+        #region Чернокнижник
+
+        #endregion
+
+        #region Демон
+
+        #endregion
+
+        #region Некромант
+
+        #endregion
+
+        #region Ренегат
+
+        #endregion
+
+        #region Имперский голем
 
 
 
         #endregion
 
+        #region Имперский чернокнижник
+
+        #endregion
+
+        #region Имперский демон
+
+        #endregion
+
+        #region Имперский некромант
+
+        #endregion
+
+        #region Имперский ренегат
+
+        #endregion
 
 
-
-
+        #endregion
 
         #region Бестиария
 

@@ -11,10 +11,10 @@ namespace Servers
 
         static void Main(string[] args)
         {
-            BasicInfantry.ImperialArbaletchik[] k;
+            BasicCavalry.ImperialEquestrian[] k;
             var fabric = new WarriorFabric();
 
-            k = fabric.CreateImperialArbaletchik(1);
+            k = fabric.CreateImperialEquestrian(1);
             Console.WriteLine(k[0].ToString());
             Console.ReadKey();
         }
