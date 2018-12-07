@@ -11,10 +11,10 @@ namespace Servers
 
         static void Main(string[] args)
         {
-            BasicCavalry.ImperialEquestrian[] k;
+            BasicMagistrate.DarkNecromancer[] k;
             var fabric = new WarriorFabric();
 
-            k = fabric.CreateImperialEquestrian(1);
+            k = fabric.CreateDarkNecromancer(1);
             Console.WriteLine(k[0].ToString());
             Console.ReadKey();
         }

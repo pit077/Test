@@ -1026,6 +1026,7 @@ namespace Servers
             return darkHunters;
         }
         #endregion
+
         #region Орк
         public BasicInfantry.Ork[] CreateOrk(int count)
         {
@@ -1785,56 +1786,729 @@ namespace Servers
 
         #region Магистрат
         #region Крушитель
+        public BasicMagistrate.Krushitel[] CreateKrushitel(int count)
+        {
+            BasicMagistrate.Krushitel[] krushitels = new BasicMagistrate.Krushitel[count];
 
+            for (int k = 0; k < count; k++)
+            {
+                BasicMagistrate.Krushitel krushitel = new BasicMagistrate.Krushitel(new ConstructionTime() { Min = 0, Sec = 1 });
+
+                krushitel.Type = "Магистрат";
+                krushitel.Name = "Крушитель";
+                krushitel.Attack = 216;
+                krushitel.Infantry = 960;
+                krushitel.Cavalry = 1200;
+                krushitel.Magistrate = 2040;
+                krushitel.Bestiary = 1440;
+                krushitel.Resources = 620;
+                krushitel.Meat = 1;
+                krushitel.TraverseSpeed = 40;
+                krushitel.sapphires = 176;
+
+                krushitels[k] = krushitel;
+
+            }
+            return krushitels;
+        }
         #endregion
 
         #region Голем
+        public BasicMagistrate.Golem[] CreateGolem(int count)
+        {
+            BasicMagistrate.Golem[] golems = new BasicMagistrate.Golem[count];
 
+            for (int k = 0; k < count; k++)
+            {
+                BasicMagistrate.Golem golem = new BasicMagistrate.Golem(new ConstructionTime() { Min = 50, Sec = 1 });
+
+                golem.Type = "Магистрат";
+                golem.Name = "Голем";
+                golem.Attack = 80;
+                golem.Infantry = 300;
+                golem.Cavalry = 300;
+                golem.Magistrate = 500;
+                golem.Bestiary = 500;
+                golem.Resources = 176;
+                golem.Meat = 3;
+                golem.TraverseSpeed = 12;
+                golem.gold = 2500;
+                golem.steel = 1000;
+                golem.meats = 1500;
+                golem.sapphires = 57;
+
+                golems[k] = golem;
+
+            }
+            return golems;
+        }
         #endregion
-
         #region Чернокнижник
+        public BasicMagistrate.Magician[] CreateMagician(int count)
+        {
+            BasicMagistrate.Magician[] magicians = new BasicMagistrate.Magician[count];
 
+            for (int k = 0; k < count; k++)
+            {
+                BasicMagistrate.Magician magician = new BasicMagistrate.Magician(new ConstructionTime() {Hour = 1, Min = 30, Sec = 1 });
+
+                magician.Type = "Магистрат";
+                magician.Name = "Чернокнижник";
+                magician.Attack = 720;
+                magician.Infantry = 80;
+                magician.Cavalry = 100;
+                magician.Magistrate = 100;
+                magician.Bestiary = 80;
+                magician.Resources = 527;
+                magician.Meat = 3;
+                magician.TraverseSpeed = 12;
+                magician.gold = 2370;
+                magician.steel = 3953;
+                magician.meats = 1500;
+                magician.sapphires = 92;                
+
+                magicians[k] = magician;
+
+            }
+            return magicians;
+        }
         #endregion
-
         #region Демон
+        public BasicMagistrate.Demon[] CreateDemon(int count)
+        {
+            BasicMagistrate.Demon[] demons = new BasicMagistrate.Demon[count];
 
+            for (int k = 0; k < count; k++)
+            {
+                BasicMagistrate.Demon demon = new BasicMagistrate.Demon(new ConstructionTime() { Min = 52, Sec = 1 });
+
+                demon.Type = "Магистрат";
+                demon.Name = "Демон";
+                demon.Attack = 100;
+                demon.Infantry = 380;
+                demon.Cavalry = 380;
+                demon.Magistrate = 500;
+                demon.Bestiary = 400;
+                demon.Resources = 194;
+                demon.Meat = 3;
+                demon.TraverseSpeed = 12;
+                demon.gold = 2700;
+                demon.steel = 1600;
+                demon.meats = 1000;
+                demon.sapphires = 59;
+
+                demons[k] = demon;
+
+            }
+            return demons;
+        }
         #endregion
-
         #region Некромант
+        public BasicMagistrate.Necromancer[] CreateNecromancer(int count)
+        {
+            BasicMagistrate.Necromancer[] necromancers = new BasicMagistrate.Necromancer[count];
 
+            for (int k = 0; k < count; k++)
+            {
+                BasicMagistrate.Necromancer necromancer = new BasicMagistrate.Necromancer(new ConstructionTime() {Hour  = 1, Min = 53, Sec = 1 });
+
+                necromancer.Type = "Магистрат";
+                necromancer.Name = "Некромант";
+                necromancer.Attack = 900;
+                necromancer.Infantry = 80;
+                necromancer.Cavalry = 80;
+                necromancer.Magistrate = 100;
+                necromancer.Bestiary = 100;
+                necromancer.Resources = 727;
+                necromancer.Meat = 3;
+                necromancer.TraverseSpeed = 12;
+                necromancer.gold = 2175;
+                necromancer.steel = 5435;
+                necromancer.meats = 3000;
+                necromancer.sapphires = 115;
+
+                necromancers[k] = necromancer;
+
+            }
+            return necromancers;
+        }
         #endregion
 
         #region Ренегат
+        public BasicMagistrate.Renegade[] CreateRenegade(int count)
+        {
+            BasicMagistrate.Renegade[] renegades = new BasicMagistrate.Renegade[count];
 
+            for (int k = 0; k < count; k++)
+            {
+                BasicMagistrate.Renegade renegade = new BasicMagistrate.Renegade(new ConstructionTime() { Hour = 2, Min = 52, Sec = 1 });
+
+                renegade.Type = "Магистрат";
+                renegade.Name = "Ренегат";
+                renegade.Attack = 1140;
+                renegade.Infantry = 80;
+                renegade.Cavalry = 80;
+                renegade.Magistrate = 100;
+                renegade.Bestiary = 100;
+                renegade.Resources = 1090;
+                renegade.Meat = 2;
+                renegade.TraverseSpeed = 13;
+                renegade.amuletsMary = 2537;
+                renegade.sapphires = 152;
+
+                renegades[k] = renegade;
+
+            }
+            return renegades;
+        }
         #endregion
 
         #region Имперский голем
+        public BasicMagistrate.ImperialGolem[] CreateImperialGolem(int count)
+        {
+            BasicMagistrate.ImperialGolem[] imperialGolems = new BasicMagistrate.ImperialGolem[count];
 
+            for (int k = 0; k < count; k++)
+            {
+                BasicMagistrate.ImperialGolem imperialGolem = new BasicMagistrate.ImperialGolem(new ConstructionTime() { Min = 50, Sec = 1 });
 
+                imperialGolem.Type = "Магистрат";
+                imperialGolem.Name = "Имперский голем";
+                imperialGolem.Attack = 80;
+                imperialGolem.Infantry = 300;
+                imperialGolem.Cavalry = 300;
+                imperialGolem.Magistrate = 500;
+                imperialGolem.Bestiary = 500;
+                imperialGolem.Resources = 176;
+                imperialGolem.Meat = 3;
+                imperialGolem.TraverseSpeed = 12;
+                imperialGolem.gold = 750;
+                imperialGolem.steel = 300;
+                imperialGolem.meats = 450;
+                imperialGolem.sapphires = 57;
 
+                imperialGolems[k] = imperialGolem;
+
+            }
+            return imperialGolems;
+        }
         #endregion
-
         #region Имперский чернокнижник
+        public BasicMagistrate.ImperialMagician[] CreateImperialMagician(int count)
+        {
+            BasicMagistrate.ImperialMagician[] imperialMagicians = new BasicMagistrate.ImperialMagician[count];
 
+            for (int k = 0; k < count; k++)
+            {
+                BasicMagistrate.ImperialMagician imperialMagician = new BasicMagistrate.ImperialMagician(new ConstructionTime() { Hour = 1, Min = 30, Sec = 1 });
+
+                imperialMagician.Type = "Магистрат";
+                imperialMagician.Name = "Имперский чернокнижник";
+                imperialMagician.Attack = 720;
+                imperialMagician.Infantry = 80;
+                imperialMagician.Cavalry = 100;
+                imperialMagician.Magistrate = 100;
+                imperialMagician.Bestiary = 80;
+                imperialMagician.Resources = 527;
+                imperialMagician.Meat = 3;
+                imperialMagician.TraverseSpeed = 12;
+                imperialMagician.gold = 711;
+                imperialMagician.steel = 1186;
+                imperialMagician.meats = 450;
+                imperialMagician.sapphires = 92;
+
+                imperialMagicians[k] = imperialMagician;
+
+            }
+            return imperialMagicians;
+        }
         #endregion
-
         #region Имперский демон
+        public BasicMagistrate.ImperialDemon[] CreateImperialDemon(int count)
+        {
+            BasicMagistrate.ImperialDemon[] demons = new BasicMagistrate.ImperialDemon[count];
 
+            for (int k = 0; k < count; k++)
+            {
+                BasicMagistrate.ImperialDemon demon = new BasicMagistrate.ImperialDemon(new ConstructionTime() { Min = 52, Sec = 1 });
+
+                demon.Type = "Магистрат";
+                demon.Name = "Имперский демон";
+                demon.Attack = 100;
+                demon.Infantry = 380;
+                demon.Cavalry = 380;
+                demon.Magistrate = 500;
+                demon.Bestiary = 400;
+                demon.Resources = 194;
+                demon.Meat = 3;
+                demon.TraverseSpeed = 12;
+                demon.gold = 810;
+                demon.steel = 480;
+                demon.meats = 300;
+                demon.sapphires = 59;
+
+                demons[k] = demon;
+
+            }
+            return demons;
+        }
         #endregion
-
         #region Имперский некромант
+        public BasicMagistrate.ImperialNecromancer[] CreateImperialNecromancer(int count)
+        {
+            BasicMagistrate.ImperialNecromancer[] imperialNecromancers = new BasicMagistrate.ImperialNecromancer[count];
 
+            for (int k = 0; k < count; k++)
+            {
+                BasicMagistrate.ImperialNecromancer imperialNecromancer = new BasicMagistrate.ImperialNecromancer(new ConstructionTime() { Hour = 1, Min = 53, Sec = 1 });
+
+                imperialNecromancer.Type = "Магистрат";
+                imperialNecromancer.Name = "Имперский некромант";
+                imperialNecromancer.Attack = 900;
+                imperialNecromancer.Infantry = 80;
+                imperialNecromancer.Cavalry = 80;
+                imperialNecromancer.Magistrate = 100;
+                imperialNecromancer.Bestiary = 100;
+                imperialNecromancer.Resources = 727;
+                imperialNecromancer.Meat = 3;
+                imperialNecromancer.TraverseSpeed = 12;
+                imperialNecromancer.gold = 653;
+                imperialNecromancer.steel = 1631;
+                imperialNecromancer.meats = 900;
+                imperialNecromancer.sapphires = 115;
+
+                imperialNecromancers[k] = imperialNecromancer;
+
+            }
+            return imperialNecromancers;
+        }
         #endregion
-
         #region Имперский ренегат
+        public BasicMagistrate.ImperialRenegade[] CreateImperialRenegade(int count)
+        {
+            BasicMagistrate.ImperialRenegade[] imperialRenegades = new BasicMagistrate.ImperialRenegade[count];
 
+            for (int k = 0; k < count; k++)
+            {
+                BasicMagistrate.ImperialRenegade imperialRenegade = new BasicMagistrate.ImperialRenegade(new ConstructionTime() { Hour = 2, Min = 52, Sec = 1 });
+
+                imperialRenegade.Type = "Магистрат";
+                imperialRenegade.Name = "Имперский ренегат";
+                imperialRenegade.Attack = 1140;
+                imperialRenegade.Infantry = 80;
+                imperialRenegade.Cavalry = 80;
+                imperialRenegade.Magistrate = 100;
+                imperialRenegade.Bestiary = 100;
+                imperialRenegade.Resources = 1090;
+                imperialRenegade.Meat = 2;
+                imperialRenegade.TraverseSpeed = 13;
+                imperialRenegade.amuletsMary = 837;
+                imperialRenegade.sapphires = 152;
+
+                imperialRenegades[k] = imperialRenegade;
+
+            }
+            return imperialRenegades;
+        }
         #endregion
 
+        #region Темный Голем
+        public BasicMagistrate.DarkGolem[] CreateDarkGolem(int count)
+        {
+            BasicMagistrate.DarkGolem[] golems = new BasicMagistrate.DarkGolem[count];
 
+            for (int k = 0; k < count; k++)
+            {
+                BasicMagistrate.DarkGolem golem = new BasicMagistrate.DarkGolem(new ConstructionTime() { Min = 0, Sec = 1 });
+
+                golem.Type = "Магистрат";
+                golem.Name = "Темный Голем";
+                golem.Attack = 84;
+                golem.Infantry = 315;
+                golem.Cavalry = 315;
+                golem.Magistrate = 525;
+                golem.Bestiary = 525;
+                golem.Resources = 176;
+                golem.Meat = 1.5;
+                golem.TraverseSpeed = 12;
+                golem.sapphires = 57;
+
+                golems[k] = golem;
+
+            }
+            return golems;
+        }
+        #endregion
+        #region Темный Чернокнижник
+        public BasicMagistrate.DarkMagician[] CreateDarkMagician(int count)
+        {
+            BasicMagistrate.DarkMagician[] darkMagicians = new BasicMagistrate.DarkMagician[count];
+
+            for (int k = 0; k < count; k++)
+            {
+                BasicMagistrate.DarkMagician darkMagician = new BasicMagistrate.DarkMagician(new ConstructionTime() { Hour = 0, Min = 0, Sec = 1 });
+
+                darkMagician.Type = "Магистрат";
+                darkMagician.Name = "Темный Чернокнижник";
+                darkMagician.Attack = 756;
+                darkMagician.Infantry = 84;
+                darkMagician.Cavalry = 105;
+                darkMagician.Magistrate = 105;
+                darkMagician.Bestiary = 84;
+                darkMagician.Resources = 527;
+                darkMagician.Meat = 2.25;
+                darkMagician.TraverseSpeed = 12;
+                darkMagician.sapphires = 92;
+
+                darkMagicians[k] = darkMagician;
+
+            }
+            return darkMagicians;
+        }
+        #endregion
+        #region Темный Демон
+        public BasicMagistrate.DarkDemon[] CreateDarkDemon(int count)
+        {
+            BasicMagistrate.DarkDemon[] darkDemons = new BasicMagistrate.DarkDemon[count];
+
+            for (int k = 0; k < count; k++)
+            {
+                BasicMagistrate.DarkDemon darkDemon = new BasicMagistrate.DarkDemon(new ConstructionTime() { Min = 0, Sec = 1 });
+
+                darkDemon.Type = "Магистрат";
+                darkDemon.Name = "Темный Демон";
+                darkDemon.Attack = 105;
+                darkDemon.Infantry = 399;
+                darkDemon.Cavalry = 399;
+                darkDemon.Magistrate = 525;
+                darkDemon.Bestiary = 420;
+                darkDemon.Resources = 194;
+                darkDemon.Meat = 1.5;
+                darkDemon.TraverseSpeed = 12;
+                darkDemon.sapphires = 59;
+
+                darkDemons[k] = darkDemon;
+
+            }
+            return darkDemons;
+        }
+        #endregion
+        #region Темный Некромант
+        public BasicMagistrate.DarkNecromancer[] CreateDarkNecromancer(int count)
+        {
+            BasicMagistrate.DarkNecromancer[] darkNecromancers = new BasicMagistrate.DarkNecromancer[count];
+
+            for (int k = 0; k < count; k++)
+            {
+                BasicMagistrate.DarkNecromancer darkNecromancer = new BasicMagistrate.DarkNecromancer(new ConstructionTime() { Hour = 0, Min = 0, Sec = 1 });
+
+                darkNecromancer.Type = "Магистрат";
+                darkNecromancer.Name = "Темный Некромант";
+                darkNecromancer.Attack = 945;
+                darkNecromancer.Infantry = 84;
+                darkNecromancer.Cavalry = 84;
+                darkNecromancer.Magistrate = 105;
+                darkNecromancer.Bestiary = 105;
+                darkNecromancer.Resources = 727;
+                darkNecromancer.Meat = 2.25;
+                darkNecromancer.TraverseSpeed = 12;
+                darkNecromancer.sapphires = 115;
+
+                darkNecromancers[k] = darkNecromancer;
+
+            }
+            return darkNecromancers;
+        }
+        #endregion
+
+        #region Возрожденный голем
+        public BasicMagistrate.RevivedGolem[] CreateRevivedGolem(int count)
+        {
+            BasicMagistrate.RevivedGolem[] revivedGolems = new BasicMagistrate.RevivedGolem[count];
+
+            for (int k = 0; k < count; k++)
+            {
+                BasicMagistrate.RevivedGolem revivedGolem = new BasicMagistrate.RevivedGolem(new ConstructionTime() { Min = 0, Sec = 1 });
+
+                revivedGolem.Type = "Магистрат";
+                revivedGolem.Name = "Возрожденный голем";
+                revivedGolem.Attack = 100;
+                revivedGolem.Infantry = 400;
+                revivedGolem.Cavalry = 400;
+                revivedGolem.Magistrate = 480;
+                revivedGolem.Bestiary = 480;
+                revivedGolem.Resources = 200;
+                revivedGolem.Meat = 1.5;
+                revivedGolem.TraverseSpeed = 12;
+                revivedGolem.sapphires = 57;
+
+                revivedGolems[k] = revivedGolem;
+
+            }
+            return revivedGolems;
+        }
+        #endregion
+        #region Возрожденный некромант
+        public BasicMagistrate.RevivedNecromancer[] CreateRevivedNecromancer(int count)
+        {
+            BasicMagistrate.RevivedNecromancer[] revivedNecromancers = new BasicMagistrate.RevivedNecromancer[count];
+
+            for (int k = 0; k < count; k++)
+            {
+                BasicMagistrate.RevivedNecromancer revivedNecromancer = new BasicMagistrate.RevivedNecromancer(new ConstructionTime() { Hour = 0, Min = 0, Sec = 1 });
+
+                revivedNecromancer.Type = "Магистрат";
+                revivedNecromancer.Name = "Возрожденный некромант";
+                revivedNecromancer.Attack = 950;
+                revivedNecromancer.Infantry = 90;
+                revivedNecromancer.Cavalry = 80;
+                revivedNecromancer.Magistrate = 80;
+                revivedNecromancer.Bestiary = 100;
+                revivedNecromancer.Resources = 700;
+                revivedNecromancer.Meat = 1.5;
+                revivedNecromancer.TraverseSpeed = 12;
+                revivedNecromancer.sapphires = 115;
+
+                revivedNecromancers[k] = revivedNecromancer;
+
+            }
+            return revivedNecromancers;
+        }
+        #endregion
+
+        #region Людоед
+        public BasicMagistrate.Cannibal[] CreateCannibal(int count)
+        {
+            BasicMagistrate.Cannibal[] cannibals = new BasicMagistrate.Cannibal[count];
+
+            for (int k = 0; k < count; k++)
+            {
+                BasicMagistrate.Cannibal cannibal = new BasicMagistrate.Cannibal(new ConstructionTime() { Hour = 0, Min = 0, Sec = 1 });
+
+                cannibal.Type = "Магистрат";
+                cannibal.Name = "Людоед";
+                cannibal.Attack = 60;
+                cannibal.Infantry = 60;
+                cannibal.Cavalry = 60;
+                cannibal.Magistrate = 180;
+                cannibal.Bestiary = 60;
+                cannibal.Resources = 120;
+
+                cannibals[k] = cannibal;
+
+            }
+            return cannibals;
+        }
+        #endregion
+
+        #region Падший
+        public BasicMagistrate.Fallen[] CreateFallen(int count)
+        {
+            BasicMagistrate.Fallen[] fallens = new BasicMagistrate.Fallen[count];
+
+            for (int k = 0; k < count; k++)
+            {
+                BasicMagistrate.Fallen fallen = new BasicMagistrate.Fallen(new ConstructionTime() { Hour = 0, Min = 0, Sec = 1 });
+
+                fallen.Type = "Магистрат";
+                fallen.Name = "Падший";
+                fallen.Attack = 2520;
+                fallen.Infantry = 260;
+                fallen.Cavalry = 230;
+                fallen.Magistrate = 280;
+                fallen.Bestiary = 280;
+                fallen.Resources = 1000;
+                fallen.Meat = 5;
+                fallen.TraverseSpeed = 27;
+                fallen.sapphires = 1070;
+
+                fallens[k] = fallen;
+
+            }
+            return fallens;
+        }
+        #endregion
+        #region Гидра
+        public BasicMagistrate.Hydra[] CreateHydra(int count)
+        {
+            BasicMagistrate.Hydra[] hydras = new BasicMagistrate.Hydra[count];
+
+            for (int k = 0; k < count; k++)
+            {
+                BasicMagistrate.Hydra hydra = new BasicMagistrate.Hydra(new ConstructionTime() { Hour = 0, Min = 0, Sec = 1 });
+
+                hydra.Type = "Магистрат";
+                hydra.Name = "Гидра";
+                hydra.Attack =420;
+                hydra.Infantry = 1600;
+                hydra.Cavalry = 1600;
+                hydra.Magistrate = 2100;
+                hydra.Bestiary = 1680;
+                hydra.Resources = 1000;
+                hydra.Meat = 3;
+                hydra.TraverseSpeed = 20;
+                hydra.sapphires = 1070;
+
+                hydras[k] = hydra;
+
+            }
+            return hydras;
+        }
+        #endregion
         #endregion
 
         #region Бестиария
 
+        #region Грифон
+        public BasicBestiary.Griffin[] CreateGriffin(int count)
+        {
+            BasicBestiary.Griffin[] griffins = new BasicBestiary.Griffin[count];
+
+            for (int k = 0; k < count; k++)
+            {
+                BasicBestiary.Griffin griffin = new BasicBestiary.Griffin(new ConstructionTime() {Hour = 1, Min = 14, Sec = 1 });
+
+                griffin.Type = "Бестиария";
+                griffin.Name = "Грифон";
+                griffin.Attack = 120;
+                griffin.Infantry = 400;
+                griffin.Cavalry = 500;
+                griffin.Magistrate = 600;
+                griffin.Bestiary = 850;
+                griffin.Resources = 267;
+                griffin.Meat = 4;
+                griffin.TraverseSpeed = 12;
+                griffin.gold = 3700;
+                griffin.steel = 1500;
+                griffin.meats = 2300;
+                griffin.sapphires = 83;
+
+                griffins[k] = griffin;
+
+            }
+            return griffins;
+        }
+        #endregion
+
+        #region Виверна
+
+        #endregion
+
+        #region Дракон
+
+        #endregion
+
+        #region Химера
+
+        #endregion
+
+        #region Пожиратель
+
+        #endregion
+
+        #region Шпион
+
+        #endregion
+
+        #region Суккуб
+
+        #endregion
+
+        #region Ассасин
+
+        #endregion
+
+        #region Мародер
+
+        #endregion
+
+        #region Имперский грифон
+
+        #endregion
+
+        #region Имперская виверна
+
+        #endregion
+
+        #region Имперский дракон
+
+        #endregion
+
+        #region Имперская химера
+
+        #endregion
+
+        #region Имперский Пожиратель
+
+        #endregion
+
+        #region Имперский шпион
+
+        #endregion
+
+        #region Имперский суккуб
+
+        #endregion
+
+        #region Имперский ассасин
+
+        #endregion
+
+        #region Темный Грифон
+
+        #endregion
+
+        #region Темная Виверна
+
+        #endregion
+
+        #region Темный Дракон
+
+        #endregion
+
+        #region Темная Химера
+
+        #endregion
+
+        #region Темный Пожиратель
+
+        #endregion
+
+        #region Темный Шпион
+
+        #endregion
+
+        #region Темный суккуб
+
+        #endregion
+
+        #region Темный ассасин
+
+        #endregion
+
+        #region Возрожденный грифон
+
+        #endregion
+
+        #region Возрожденный дракон
+
+        #endregion
+
+        #region Кошмар
+
+        #endregion
+
+        #region Инферно
+
+        #endregion
+
+        #region Архангел
+
+        #endregion
+
+        #region Потрошитель
+
+        #endregion
 
 
         #endregion
