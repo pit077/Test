@@ -11,12 +11,21 @@ namespace Servers
 
         static void Main(string[] args)
         {
-            BasicMagistrate.DarkNecromancer[] k;
-            var fabric = new WarriorFabric();
-
-            k = fabric.CreateDarkNecromancer(1);
+            BasicInfantry.Kopeyshchik[] k;
+            var fabrics = new WarriorFabric();
+            k = fabrics.CreateKopeyshik(1);
             Console.WriteLine(k[0].ToString());
+
+            Console.WriteLine("\n");
+
+            BasicRelicOF.AngerDrop[] i;
+            var fabric = new RelicOF();
+            i = fabric.CreateAngerDrop(1);
+            Console.WriteLine(i[0].ToString());
+
             Console.ReadKey();
         }
+
+        
     }
-}
+} 

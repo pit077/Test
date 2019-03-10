@@ -43,17 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Реликвии\Базовые классы реликвий\BasicRelicCastle.cs" />
-    <Compile Include="Реликвии\Базовые классы реликвий\BasicRelicDEF.cs" />
-    <Compile Include="Реликвии\Базовые классы реликвий\BasicRelicOF.cs" />
-    <Compile Include="Реликвии\AddRelics.cs" />
     <Compile Include="Армия\WarriorFabric.cs" />
     <Compile Include="Армия\Бестиария\BasicBestiary.cs" />
     <Compile Include="Армия\Магистрат\BasicMagistrate.cs" />
     <Compile Include="Армия\Кавалерия\BasicCavalry.cs" />
     <Compile Include="Армия\Пехота\BasicInfantry.cs" />
     <Compile Include="Resources.cs" />
-    <Compile Include="Реликвии\Базовые классы реликвий\BasicRelics.cs" />
+    <Compile Include="Реликвии\BasicRelics.cs" />
     <Compile Include="ConstructionTime.cs" />
     <Compile Include="Impirium.cs" />
     <Compile Include="Program.cs" />

@@ -42,9 +42,9 @@ namespace Servers
         public string Type { get { return type; } set { type = value; } }
         public string Name { get { return name; }set { name = value; } }
         public double Investigation { get { return investigation; } set { investigation = value; } }
-        public int Attack
+        public double Attack
         {
-            get { return(int) attack; } // атака
+            get { return attack; } // атака
             set
             {
                 attack = value;
@@ -60,35 +60,7 @@ namespace Servers
         public double TraverseSpeed { get { return traverseSpeed; } set { traverseSpeed = value; } }
         //public int ConstructionTime { get { return constructionTime; } set { constructionTime = value; } }
 
-        //public  string ToString(string type, string name, double attack, double infantry, double cavalry, double magistrate, double bestiary, double resources, double meat, double traverseSpeed, int constructionTime) // атака / защита
-        //{
-        //    string warrior = string.Format(this.GetType().Name + " :  \nТип: {0}"
-        //                                                           + "\nИмя: {1}"
-        //                                                           // + "\nРазведка: {2}"
-        //                                                           + "\nАтака: {2}"
-        //                                                           + "\nЗащита от пехоты: {3}"
-        //                                                           + "\nЗащита от кавалерии: {4}"
-        //                                                           + "\nЗащита от магистрата: {5}"
-        //                                                           + "\nЗащита от бастерии: {6}"
-        //                                                           + "\nНесет ресурсов при грабеже: {7}"
-        //                                                           + "\nСтоимость содержания в час: {8}"
-        //                                                           + "\nСкорость движения: {9}"
-        //                                                           + "\nВремя строительства: {10}",
-        //                                                                                         this.type,
-        //                                                                                         this.name,
-        //                                                                                         // investigation,
-        //                                                                                         this.attack,
-        //                                                                                         this.infantry,
-        //                                                                                         this.cavalry,
-        //                                                                                         this.magistrate,
-        //                                                                                         this.bestiary,
-        //                                                                                         this.resources,
-        //                                                                                         this. meat,
-        //                                                                                         this.traverseSpeed,
-        //                                                                                         this.ConstructionTime);
-        //    return warrior;
-        //}
-        public override string ToString() //
+        public override string ToString()
         {
             string warrior = string.Format(this.GetType().Name + " :  \nТип: {0}"
                                                                    + "\nИмя: {1}"
@@ -116,9 +88,6 @@ namespace Servers
                                                                                                  ConstructionTime);
             return warrior;
         }
-
-
-
-
+            
     }
 }

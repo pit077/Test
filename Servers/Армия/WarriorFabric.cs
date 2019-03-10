@@ -2389,128 +2389,891 @@ namespace Servers
             return griffins;
         }
         #endregion
-
         #region Виверна
+        public BasicBestiary.Wyvern[] CreateWyvern(int count)
+        {
+            BasicBestiary.Wyvern[] wyverns = new BasicBestiary.Wyvern[count];
 
+            for (int k = 0; k < count; k++)
+            {
+                BasicBestiary.Wyvern wyvern = new BasicBestiary.Wyvern(new ConstructionTime() { Hour = 3, Min = 0, Sec = 1 });
+
+                wyvern.Type = "Бестиария";
+                wyvern.Name = "Виверна";
+                wyvern.Attack = 1440;
+                wyvern.Infantry = 144;
+                wyvern.Cavalry = 43;
+                wyvern.Magistrate = 43;
+                wyvern.Bestiary = 144;
+                wyvern.Resources = 1275;
+                wyvern.Meat = 4;
+                wyvern.TraverseSpeed = 24;
+                wyvern.gold = 5700;
+                wyvern.steel = 9500;
+                wyvern.meats = 3800;
+                wyvern.sapphires = 153;
+
+                wyverns[k] = wyvern;
+
+            }
+            return wyverns;
+        }
         #endregion
-
         #region Дракон
+        public BasicBestiary.Dragon[] CreateDragon(int count)
+        {
+            BasicBestiary.Dragon[] dragons = new BasicBestiary.Dragon[count];
 
+            for (int k = 0; k < count; k++)
+            {
+                BasicBestiary.Dragon dragon = new BasicBestiary.Dragon(new ConstructionTime() { Hour = 3, Min = 30, Sec = 1 });
+
+                dragon.Type = "Бестиария";
+                dragon.Name = "Дракон";
+                dragon.Attack = 1680;
+                dragon.Infantry = 144;
+                dragon.Cavalry = 43;
+                dragon.Magistrate = 43;
+                dragon.Bestiary = 144;
+                dragon.Resources = 1636;
+                dragon.Meat = 4;
+                dragon.TraverseSpeed = 18;
+                dragon.gold = 5000;
+                dragon.steel = 12277;
+                dragon.meats = 7000;
+                dragon.sapphires = 167;
+
+                dragons[k] = dragon;
+
+            }
+            return dragons;
+        }
         #endregion
-
         #region Химера
+        public BasicBestiary.Chimera[] CreateChimera(int count)
+        {
+            BasicBestiary.Chimera[] chimeras = new BasicBestiary.Chimera[count];
 
+            for (int k = 0; k < count; k++)
+            {
+                BasicBestiary.Chimera chimera = new BasicBestiary.Chimera(new ConstructionTime() { Hour = 1, Min = 53, Sec = 1 });
+
+                chimera.Type = "Бестиария";
+                chimera.Name = "Химера";
+                chimera.Attack = 900;
+                chimera.Infantry = 100;
+                chimera.Cavalry = 100;
+                chimera.Magistrate = 100;
+                chimera.Bestiary = 100;
+                chimera.Resources = 750;
+                chimera.Meat = 4;
+                chimera.TraverseSpeed = 30;
+                chimera.gold = 4200;
+                chimera.steel = 7000;
+                chimera.meats = 7000;
+                chimera.sapphires = 128;
+
+                chimeras[k] = chimera;
+
+            }
+            return chimeras;
+        }
         #endregion
-
         #region Пожиратель
+        public BasicBestiary.Devourer[] CreateDevourer(int count)
+        {
+            BasicBestiary.Devourer[] devourers = new BasicBestiary.Devourer[count];
 
+            for (int k = 0; k < count; k++)
+            {
+                BasicBestiary.Devourer devourer = new BasicBestiary.Devourer(new ConstructionTime() { Hour = 2, Min = 13, Sec = 1 });
+
+                devourer.Type = "Бестиария";
+                devourer.Name = "Пожиратель";
+                devourer.Attack = 180;
+                devourer.Infantry = 600;
+                devourer.Cavalry = 750;
+                devourer.Magistrate = 1275;
+                devourer.Bestiary = 900;
+                devourer.Resources = 267;
+                devourer.Meat = 4;
+                devourer.TraverseSpeed = 24;
+                devourer.amuletsMary = 1950;
+                devourer.sapphires = 110;
+
+                devourers[k] = devourer;
+
+            }
+            return devourers;
+        }
         #endregion
-
         #region Шпион
+        public BasicBestiary.Spy[] CreateSpy(int count)
+        {
+            BasicBestiary.Spy[] spys = new BasicBestiary.Spy[count];
 
+            for (int k = 0; k < count; k++)
+            {
+                BasicBestiary.Spy spy = new BasicBestiary.Spy(new ConstructionTime() { Min = 25, Sec =  0});
+
+                spy.Type = "Бестиария";
+                spy.Name = "Шпион";
+                spy.Investigation = 30;
+                spy.Infantry = 40;
+                spy.Cavalry = 24;
+                spy.Magistrate = 22;
+                spy.Bestiary = 30;
+                spy.Meat = 4;
+                spy.TraverseSpeed = 24;
+                spy.gold = 450;
+                spy.steel = 450;
+                spy.meats = 600;
+                spy.sapphires = 24;
+
+                spys[k] = spy;
+
+            }
+            return spys;
+        }
         #endregion
-
         #region Суккуб
+        public BasicBestiary.Sukkub[] CreateSukkub(int count)
+        {
+            BasicBestiary.Sukkub[] sukkubs = new BasicBestiary.Sukkub[count];
 
+            for (int k = 0; k < count; k++)
+            {
+                BasicBestiary.Sukkub sukkub = new BasicBestiary.Sukkub(new ConstructionTime() { Min = 30, Sec = 1 });
+
+                sukkub.Type = "Бестиария";
+                sukkub.Name = "Суккуб";
+                sukkub.Investigation = 43;
+                sukkub.Infantry = 60;
+                sukkub.Cavalry = 36;
+                sukkub.Magistrate = 33;
+                sukkub.Bestiary = 43;
+                sukkub.Meat = 4;
+                sukkub.TraverseSpeed = 50;
+                sukkub.sapphires = 28;
+
+                sukkubs[k] = sukkub;
+
+            }
+            return sukkubs;
+        }
         #endregion
-
         #region Ассасин
+        public BasicBestiary.Assasin[] CreateAssasin(int count)
+        {
+            BasicBestiary.Assasin[] assasins = new BasicBestiary.Assasin[count];
 
+            for (int k = 0; k < count; k++)
+            {
+                BasicBestiary.Assasin assasin = new BasicBestiary.Assasin(new ConstructionTime() { Hour = 1 });
+
+                assasin.Type = "Бестиария";
+                assasin.Name = "Ассасин";
+                assasin.Investigation = 30;
+                assasin.Infantry = 40;
+                assasin.Cavalry = 24;
+                assasin.Magistrate = 24;
+                assasin.Bestiary = 30;
+                assasin.Meat = 4;
+                assasin.TraverseSpeed = 27;
+                assasin.amuletsMary = 1364;
+                assasin.sapphires = 38;
+
+                assasins[k] = assasin;
+
+            }
+            return assasins;
+        }
         #endregion
-
         #region Мародер
+        public BasicBestiary.Marauder[] CreateMarauder(int count)
+        {
+            BasicBestiary.Marauder[] marauders = new BasicBestiary.Marauder[count];
 
+            for (int k = 0; k < count; k++)
+            {
+                BasicBestiary.Marauder marauder = new BasicBestiary.Marauder(new ConstructionTime() { Hour = 0,Min = 0,Sec = 1});
+
+                marauder.Type = "Бестиария";
+                marauder.Name = "Мародер";
+                marauder.Attack = 100;
+                marauder.Infantry = 100;
+                marauder.Cavalry = 100;
+                marauder.Magistrate = 100;
+                marauder.Bestiary = 100;
+                marauder.Resources = 2250;
+                marauder.Meat = 1;
+                marauder.TraverseSpeed = 90;
+                marauder.sapphires = 128;
+
+                marauders[k] = marauder;
+
+            }
+            return marauders;
+        }
         #endregion
 
         #region Имперский грифон
+        public BasicBestiary.ImperialGriffin[] CreateImperialGriffin(int count)
+        {
+            BasicBestiary.ImperialGriffin[] imperialGriffins = new BasicBestiary.ImperialGriffin[count];
 
+            for (int k = 0; k < count; k++)
+            {
+                BasicBestiary.ImperialGriffin imperialGriffin = new BasicBestiary.ImperialGriffin(new ConstructionTime() { Hour = 1, Min = 14, Sec = 1 });
+
+                imperialGriffin.Type = "Бестиария";
+                imperialGriffin.Name = "Имперский грифон";
+                imperialGriffin.Attack = 120;
+                imperialGriffin.Infantry = 400;
+                imperialGriffin.Cavalry = 500;
+                imperialGriffin.Magistrate = 600;
+                imperialGriffin.Bestiary = 850;
+                imperialGriffin.Resources = 267;
+                imperialGriffin.Meat = 4;
+                imperialGriffin.TraverseSpeed = 12;
+                imperialGriffin.gold = 1110;
+                imperialGriffin.steel = 450;
+                imperialGriffin.meats = 690;
+                imperialGriffin.sapphires = 83;
+
+                imperialGriffins[k] = imperialGriffin;
+
+            }
+            return imperialGriffins;
+        }
         #endregion
-
         #region Имперская виверна
+        public BasicBestiary.ImperialWyvern[] CreateImperialWyvern(int count)
+        {
+            BasicBestiary.ImperialWyvern[] imperialWyverns = new BasicBestiary.ImperialWyvern[count];
 
+            for (int k = 0; k < count; k++)
+            {
+                BasicBestiary.ImperialWyvern imperialWyvern = new BasicBestiary.ImperialWyvern(new ConstructionTime() { Hour = 3, Min = 0, Sec = 1 });
+
+                imperialWyvern.Type = "Бестиария";
+                imperialWyvern.Name = "Имперская виверна";
+                imperialWyvern.Attack = 1440;
+                imperialWyvern.Infantry = 144;
+                imperialWyvern.Cavalry = 43;
+                imperialWyvern.Magistrate = 43;
+                imperialWyvern.Bestiary = 144;
+                imperialWyvern.Resources = 1275;
+                imperialWyvern.Meat = 4;
+                imperialWyvern.TraverseSpeed = 24;
+                imperialWyvern.gold = 1710;
+                imperialWyvern.steel = 2850;
+                imperialWyvern.meats = 1140;
+                imperialWyvern.sapphires = 153;
+
+                imperialWyverns[k] = imperialWyvern;
+
+            }
+            return imperialWyverns;
+        }
         #endregion
-
         #region Имперский дракон
+        public BasicBestiary.ImperialDragon[] CreateImperialDragon(int count)
+        {
+            BasicBestiary.ImperialDragon[] imperialDragons = new BasicBestiary.ImperialDragon[count];
 
+            for (int k = 0; k < count; k++)
+            {
+                BasicBestiary.ImperialDragon imperialDragon = new BasicBestiary.ImperialDragon(new ConstructionTime() { Hour = 3, Min = 30, Sec = 1 });
+
+                imperialDragon.Type = "Бестиария";
+                imperialDragon.Name = "Имперский дракон";
+                imperialDragon.Attack = 1680;
+                imperialDragon.Infantry = 144;
+                imperialDragon.Cavalry = 43;
+                imperialDragon.Magistrate = 43;
+                imperialDragon.Bestiary = 144;
+                imperialDragon.Resources = 1636;
+                imperialDragon.Meat = 4;
+                imperialDragon.TraverseSpeed = 18;
+                imperialDragon.gold = 1500;
+                imperialDragon.steel = 3683;
+                imperialDragon.meats = 2100;
+                imperialDragon.sapphires = 167;
+
+                imperialDragons[k] = imperialDragon;
+
+            }
+            return imperialDragons;
+        }
         #endregion
-
         #region Имперская химера
+        public BasicBestiary.ImperialChimera[] CreateImperialChimera(int count)
+        {
+            BasicBestiary.ImperialChimera[] imperialChimeras = new BasicBestiary.ImperialChimera[count];
 
+            for (int k = 0; k < count; k++)
+            {
+                BasicBestiary.ImperialChimera imperialChimera = new BasicBestiary.ImperialChimera(new ConstructionTime() { Hour = 1, Min = 53, Sec = 1 });
+
+                imperialChimera.Type = "Бестиария";
+                imperialChimera.Name = "Имперская химера";
+                imperialChimera.Attack = 900;
+                imperialChimera.Infantry = 100;
+                imperialChimera.Cavalry = 100;
+                imperialChimera.Magistrate = 100;
+                imperialChimera.Bestiary = 100;
+                imperialChimera.Resources = 750;
+                imperialChimera.Meat = 4;
+                imperialChimera.TraverseSpeed = 30;
+                imperialChimera.gold = 1400;
+                imperialChimera.steel = 2300;
+                imperialChimera.meats = 2300;
+                imperialChimera.sapphires = 128;
+
+                imperialChimeras[k] = imperialChimera;
+
+            }
+            return imperialChimeras;
+        }
         #endregion
-
         #region Имперский Пожиратель
+        public BasicBestiary.ImperialDevourer[] CreateImperialDevourer(int count)
+        {
+            BasicBestiary.ImperialDevourer[] imperialDevourers = new BasicBestiary.ImperialDevourer[count];
 
+            for (int k = 0; k < count; k++)
+            {
+                BasicBestiary.ImperialDevourer imperialDevourer = new BasicBestiary.ImperialDevourer(new ConstructionTime() { Hour = 2, Min = 13, Sec = 1 });
+
+                imperialDevourer.Type = "Бестиария";
+                imperialDevourer.Name = "Имперский Пожиратель";
+                imperialDevourer.Attack = 180;
+                imperialDevourer.Infantry = 600;
+                imperialDevourer.Cavalry = 750;
+                imperialDevourer.Magistrate = 1275;
+                imperialDevourer.Bestiary = 900;
+                imperialDevourer.Resources = 267;
+                imperialDevourer.Meat = 4;
+                imperialDevourer.TraverseSpeed = 24;
+                imperialDevourer.amuletsMary = 644;
+                imperialDevourer.sapphires = 110;
+
+                imperialDevourers[k] = imperialDevourer;
+
+            }
+            return imperialDevourers;
+        }
         #endregion
-
         #region Имперский шпион
+        public BasicBestiary.ImperialSpy[] CreateImperialSpy(int count)
+        {
+            BasicBestiary.ImperialSpy[] imperialSpys = new BasicBestiary.ImperialSpy[count];
 
+            for (int k = 0; k < count; k++)
+            {
+                BasicBestiary.ImperialSpy imperialSpy = new BasicBestiary.ImperialSpy(new ConstructionTime() {Min = 25, Sec = 0 });
+
+                imperialSpy.Type = "Бестиария";
+                imperialSpy.Name = "Имперский шпион";
+                imperialSpy.Investigation = 30;
+                imperialSpy.Infantry = 40;
+                imperialSpy.Cavalry = 24;
+                imperialSpy.Magistrate = 22;
+                imperialSpy.Bestiary = 30;
+                imperialSpy.Meat = 4;
+                imperialSpy.TraverseSpeed = 24;
+                imperialSpy.gold = 135;
+                imperialSpy.steel = 135;
+                imperialSpy.meats = 180;
+                imperialSpy.sapphires = 24;
+
+                imperialSpys[k] = imperialSpy;
+
+            }
+            return imperialSpys;
+        }
         #endregion
-
         #region Имперский суккуб
+        public BasicBestiary.ImperialSukkub[] CreateImperialSukkub(int count)
+        {
+            BasicBestiary.ImperialSukkub[] imperialSukkubs = new BasicBestiary.ImperialSukkub[count];
 
+            for (int k = 0; k < count; k++)
+            {
+                BasicBestiary.ImperialSukkub imperialSukkub = new BasicBestiary.ImperialSukkub(new ConstructionTime() { Min = 30, Sec = 1 });
+
+                imperialSukkub.Type = "Бестиария";
+                imperialSukkub.Name = "Имперский суккуб";
+                imperialSukkub.Investigation = 43;
+                imperialSukkub.Infantry = 60;
+                imperialSukkub.Cavalry = 36;
+                imperialSukkub.Magistrate = 33;
+                imperialSukkub.Bestiary = 43;
+                imperialSukkub.Meat = 4;
+                imperialSukkub.TraverseSpeed = 50;
+                imperialSukkub.amuletsMary = 293;
+                imperialSukkub.sapphires = 28;
+
+                imperialSukkubs[k] = imperialSukkub;
+
+            }
+            return imperialSukkubs;
+        }
         #endregion
-
         #region Имперский ассасин
+        public BasicBestiary.ImperialAssasin[] CreateImperialAssasin(int count)
+        {
+            BasicBestiary.ImperialAssasin[] imperialAssasins = new BasicBestiary.ImperialAssasin[count];
 
+            for (int k = 0; k < count; k++)
+            {
+                BasicBestiary.ImperialAssasin imperialAssasin = new BasicBestiary.ImperialAssasin(new ConstructionTime() { Hour = 1, Min = 0, Sec = 1 });
+
+                imperialAssasin.Type = "Бестиария";
+                imperialAssasin.Name = "Имперский ассасин";
+                imperialAssasin.Investigation = 30;
+                imperialAssasin.Infantry = 40;
+                imperialAssasin.Cavalry = 24;
+                imperialAssasin.Magistrate = 24;
+                imperialAssasin.Bestiary = 30;
+                imperialAssasin.Meat = 4;
+                imperialAssasin.TraverseSpeed = 27;
+                imperialAssasin.amuletsMary = 450;
+                imperialAssasin.sapphires = 38;
+
+                imperialAssasins[k] = imperialAssasin;
+
+            }
+            return imperialAssasins;
+        }
         #endregion
 
         #region Темный Грифон
+        public BasicBestiary.DarkGriffin[] CreateDarkGriffin(int count)
+        {
+            BasicBestiary.DarkGriffin[] darkGriffins = new BasicBestiary.DarkGriffin[count];
 
+            for (int k = 0; k < count; k++)
+            {
+                BasicBestiary.DarkGriffin darkGriffin = new BasicBestiary.DarkGriffin(new ConstructionTime() { Min = 0, Sec = 1 });
+
+                darkGriffin.Type = "Бестиария";
+                darkGriffin.Name = "Темный Грифон";
+                darkGriffin.Attack = 126;
+                darkGriffin.Infantry = 420;
+                darkGriffin.Cavalry = 525;
+                darkGriffin.Magistrate = 630;
+                darkGriffin.Bestiary = 892;
+                darkGriffin.Resources = 267;
+                darkGriffin.Meat = 2;
+                darkGriffin.TraverseSpeed = 12;
+                darkGriffin.sapphires = 83;
+
+                darkGriffins[k] = darkGriffin;
+
+            }
+            return darkGriffins;
+        }
         #endregion
-
         #region Темная Виверна
+        public BasicBestiary.DarkWyvern[] CreateDarkWyvern(int count)
+        {
+            BasicBestiary.DarkWyvern[] darkWyverns = new BasicBestiary.DarkWyvern[count];
 
+            for (int k = 0; k < count; k++)
+            {
+                BasicBestiary.DarkWyvern darkWyvern = new BasicBestiary.DarkWyvern(new ConstructionTime() { Min = 0, Sec = 1 });
+
+                darkWyvern.Type = "Бестиария";
+                darkWyvern.Name = "Темная Виверна";
+                darkWyvern.Attack = 1512;
+                darkWyvern.Infantry = 400;
+                darkWyvern.Cavalry = 151;
+                darkWyvern.Magistrate = 45;
+                darkWyvern.Bestiary = 45;
+                darkWyvern.Resources = 1275;
+                darkWyvern.Meat = 3;
+                darkWyvern.TraverseSpeed = 24;
+                darkWyvern.sapphires = 153;
+
+                darkWyverns[k] = darkWyvern;
+
+            }
+            return darkWyverns;
+        }
         #endregion
-
         #region Темный Дракон
+        public BasicBestiary.DarkDragon[] CreateDarkDragon(int count)
+        {
+            BasicBestiary.DarkDragon[] darkDragons = new BasicBestiary.DarkDragon[count];
 
+            for (int k = 0; k < count; k++)
+            {
+                BasicBestiary.DarkDragon darkDragon = new BasicBestiary.DarkDragon(new ConstructionTime() {  Min = 0, Sec = 1 });
+
+                darkDragon.Type = "Бестиария";
+                darkDragon.Name = "Темный Дракон";
+                darkDragon.Attack = 1764;
+                darkDragon.Infantry = 151;
+                darkDragon.Cavalry = 45;
+                darkDragon.Magistrate = 45;
+                darkDragon.Bestiary = 151;
+                darkDragon.Resources = 1636;
+                darkDragon.Meat = 3;
+                darkDragon.TraverseSpeed = 18;
+                darkDragon.sapphires = 167;
+
+                darkDragons[k] = darkDragon;
+
+            }
+            return darkDragons;
+        }
         #endregion
-
         #region Темная Химера
+        public BasicBestiary.DarkChimera[] CreateDarkChimera(int count)
+        {
+            BasicBestiary.DarkChimera[] darkChimeras = new BasicBestiary.DarkChimera[count];
 
+            for (int k = 0; k < count; k++)
+            {
+                BasicBestiary.DarkChimera darkChimera = new BasicBestiary.DarkChimera(new ConstructionTime() { Min = 0, Sec = 1 });
+
+                darkChimera.Type = "Бестиария";
+                darkChimera.Name = "Темная Химера";
+                darkChimera.Attack = 945;
+                darkChimera.Infantry = 105;
+                darkChimera.Cavalry = 105;
+                darkChimera.Magistrate = 105;
+                darkChimera.Bestiary = 105;
+                darkChimera.Resources = 750;
+                darkChimera.Meat = 3;
+                darkChimera.TraverseSpeed = 30;
+                darkChimera.sapphires = 128;
+
+                darkChimeras[k] = darkChimera;
+
+            }
+            return darkChimeras;
+        }
         #endregion
-
         #region Темный Пожиратель
+        public BasicBestiary.DarkDevourer[] CreateDarkDevourer(int count)
+        {
+            BasicBestiary.DarkDevourer[] darkDevourers = new BasicBestiary.DarkDevourer[count];
 
+            for (int k = 0; k < count; k++)
+            {
+                BasicBestiary.DarkDevourer darkDevourer = new BasicBestiary.DarkDevourer(new ConstructionTime() { Min = 0, Sec = 1 });
+
+                darkDevourer.Type = "Бестиария";
+                darkDevourer.Name = "Темный Пожиратель";
+                darkDevourer.Attack = 189;
+                darkDevourer.Infantry = 630;
+                darkDevourer.Cavalry = 788;
+                darkDevourer.Magistrate = 1339;
+                darkDevourer.Bestiary = 945;
+                darkDevourer.Resources = 267;
+                darkDevourer.Meat = 2;
+                darkDevourer.TraverseSpeed = 24;
+                darkDevourer.sapphires = 110;
+
+                darkDevourers[k] = darkDevourer;
+
+            }
+            return darkDevourers;
+        }
         #endregion
-
         #region Темный Шпион
+        public BasicBestiary.DarkSpy[] CreateDarkSpy(int count)
+        {
+            BasicBestiary.DarkSpy[] darkSpys = new BasicBestiary.DarkSpy[count];
 
+            for (int k = 0; k < count; k++)
+            {
+                BasicBestiary.DarkSpy darkSpy = new BasicBestiary.DarkSpy(new ConstructionTime() { Hour = 1, Min = 14, Sec = 1 });
+
+                darkSpy.Type = "Бестиария";
+                darkSpy.Name = "Грифон";
+                darkSpy.Investigation = 0;
+                darkSpy.Attack = 120;
+                darkSpy.Infantry = 400;
+                darkSpy.Cavalry = 500;
+                darkSpy.Magistrate = 600;
+                darkSpy.Bestiary = 850;
+                darkSpy.Resources = 267;
+                darkSpy.Meat = 4;
+                darkSpy.TraverseSpeed = 12;
+                darkSpy.gold = 3700;
+                darkSpy.steel = 1500;
+                darkSpy.meats = 2300;
+                darkSpy.amuletsMary = 0;
+                darkSpy.sapphires = 83;
+
+                darkSpys[k] = darkSpy;
+
+            }
+            return darkSpys;
+        }
         #endregion
-
         #region Темный суккуб
+        public BasicBestiary.DarSukkub[] CreateDarSukkub(int count)
+        {
+            BasicBestiary.DarSukkub[] darSukkubs = new BasicBestiary.DarSukkub[count];
 
+            for (int k = 0; k < count; k++)
+            {
+                BasicBestiary.DarSukkub darSukkub = new BasicBestiary.DarSukkub(new ConstructionTime() { Hour = 1, Min = 14, Sec = 1 });
+
+                darSukkub.Type = "Бестиария";
+                darSukkub.Name = "Грифон";
+                darSukkub.Investigation = 0;
+                darSukkub.Attack = 120;
+                darSukkub.Infantry = 400;
+                darSukkub.Cavalry = 500;
+                darSukkub.Magistrate = 600;
+                darSukkub.Bestiary = 850;
+                darSukkub.Resources = 267;
+                darSukkub.Meat = 4;
+                darSukkub.TraverseSpeed = 12;
+                darSukkub.gold = 3700;
+                darSukkub.steel = 1500;
+                darSukkub.meats = 2300;
+                darSukkub.amuletsMary = 0;
+                darSukkub.sapphires = 83;
+
+                darSukkubs[k] = darSukkub;
+
+            }
+            return darSukkubs;
+        }
         #endregion
-
         #region Темный ассасин
+        public BasicBestiary.DarAssasin[] CreateDarAssasin(int count)
+        {
+            BasicBestiary.DarAssasin[] darAssasins = new BasicBestiary.DarAssasin[count];
 
+            for (int k = 0; k < count; k++)
+            {
+                BasicBestiary.DarAssasin darAssasin = new BasicBestiary.DarAssasin(new ConstructionTime() { Hour = 1, Min = 14, Sec = 1 });
+
+                darAssasin.Type = "Бестиария";
+                darAssasin.Name = "Грифон";
+                darAssasin.Investigation = 0;
+                darAssasin.Attack = 120;
+                darAssasin.Infantry = 400;
+                darAssasin.Cavalry = 500;
+                darAssasin.Magistrate = 600;
+                darAssasin.Bestiary = 850;
+                darAssasin.Resources = 267;
+                darAssasin.Meat = 4;
+                darAssasin.TraverseSpeed = 12;
+                darAssasin.gold = 3700;
+                darAssasin.steel = 1500;
+                darAssasin.meats = 2300;
+                darAssasin.amuletsMary = 0;
+                darAssasin.sapphires = 83;
+
+                darAssasins[k] = darAssasin;
+
+            }
+            return darAssasins;
+        }
         #endregion
 
         #region Возрожденный грифон
+        public BasicBestiary.RevivedGriffin[] CreateRevivedGriffin(int count)
+        {
+            BasicBestiary.RevivedGriffin[] revivedGriffins = new BasicBestiary.RevivedGriffin[count];
 
+            for (int k = 0; k < count; k++)
+            {
+                BasicBestiary.RevivedGriffin revivedGriffin = new BasicBestiary.RevivedGriffin(new ConstructionTime() { Hour = 1, Min = 14, Sec = 1 });
+
+                revivedGriffin.Type = "Бестиария";
+                revivedGriffin.Name = "Грифон";
+                revivedGriffin.Investigation = 0;
+                revivedGriffin.Attack = 120;
+                revivedGriffin.Infantry = 400;
+                revivedGriffin.Cavalry = 500;
+                revivedGriffin.Magistrate = 600;
+                revivedGriffin.Bestiary = 850;
+                revivedGriffin.Resources = 267;
+                revivedGriffin.Meat = 4;
+                revivedGriffin.TraverseSpeed = 12;
+                revivedGriffin.gold = 3700;
+                revivedGriffin.steel = 1500;
+                revivedGriffin.meats = 2300;
+                revivedGriffin.amuletsMary = 0;
+                revivedGriffin.sapphires = 83;
+
+                revivedGriffins[k] = revivedGriffin;
+
+            }
+            return revivedGriffins;
+        }
         #endregion
-
         #region Возрожденный дракон
+        public BasicBestiary.RevivedDragon[] CreateRevivedDragon(int count)
+        {
+            BasicBestiary.RevivedDragon[] revivedDragons = new BasicBestiary.RevivedDragon[count];
 
+            for (int k = 0; k < count; k++)
+            {
+                BasicBestiary.RevivedDragon revivedDragon = new BasicBestiary.RevivedDragon(new ConstructionTime() { Hour = 1, Min = 14, Sec = 1 });
+
+                revivedDragon.Type = "Бестиария";
+                revivedDragon.Name = "Грифон";
+                revivedDragon.Investigation = 0;
+                revivedDragon.Attack = 120;
+                revivedDragon.Infantry = 400;
+                revivedDragon.Cavalry = 500;
+                revivedDragon.Magistrate = 600;
+                revivedDragon.Bestiary = 850;
+                revivedDragon.Resources = 267;
+                revivedDragon.Meat = 4;
+                revivedDragon.TraverseSpeed = 12;
+                revivedDragon.gold = 3700;
+                revivedDragon.steel = 1500;
+                revivedDragon.meats = 2300;
+                revivedDragon.amuletsMary = 0;
+                revivedDragon.sapphires = 83;
+
+                revivedDragons[k] = revivedDragon;
+
+            }
+            return revivedDragons;
+        }
         #endregion
 
         #region Кошмар
+        public BasicBestiary.Nightmare[] CreateNightmare(int count)
+        {
+            BasicBestiary.Nightmare[] nightmares = new BasicBestiary.Nightmare[count];
 
+            for (int k = 0; k < count; k++)
+            {
+                BasicBestiary.Nightmare nightmare = new BasicBestiary.Nightmare(new ConstructionTime() { Hour = 1, Min = 14, Sec = 1 });
+
+                nightmare.Type = "Бестиария";
+                nightmare.Name = "Грифон";
+                nightmare.Investigation = 0;
+                nightmare.Attack = 120;
+                nightmare.Infantry = 400;
+                nightmare.Cavalry = 500;
+                nightmare.Magistrate = 600;
+                nightmare.Bestiary = 850;
+                nightmare.Resources = 267;
+                nightmare.Meat = 4;
+                nightmare.TraverseSpeed = 12;
+                nightmare.gold = 3700;
+                nightmare.steel = 1500;
+                nightmare.meats = 2300;
+                nightmare.amuletsMary = 0;
+                nightmare.sapphires = 83;
+
+                nightmares[k] = nightmare;
+
+            }
+            return nightmares;
+        }
         #endregion
-
         #region Инферно
+        public BasicBestiary.Inferno[] CreateInferno(int count)
+        {
+            BasicBestiary.Inferno[] infernos = new BasicBestiary.Inferno[count];
 
+            for (int k = 0; k < count; k++)
+            {
+                BasicBestiary.Inferno inferno = new BasicBestiary.Inferno(new ConstructionTime() { Hour = 1, Min = 14, Sec = 1 });
+
+                inferno.Type = "Бестиария";
+                inferno.Name = "Грифон";
+                inferno.Investigation = 0;
+                inferno.Attack = 120;
+                inferno.Infantry = 400;
+                inferno.Cavalry = 500;
+                inferno.Magistrate = 600;
+                inferno.Bestiary = 850;
+                inferno.Resources = 267;
+                inferno.Meat = 4;
+                inferno.TraverseSpeed = 12;
+                inferno.gold = 3700;
+                inferno.steel = 1500;
+                inferno.meats = 2300;
+                inferno.amuletsMary = 0;
+                inferno.sapphires = 83;
+
+                infernos[k] = inferno;
+
+            }
+            return infernos;
+        }
         #endregion
-
         #region Архангел
+        public BasicBestiary.Archangel[] CreateArchangel(int count)
+        {
+            BasicBestiary.Archangel[] archangels = new BasicBestiary.Archangel[count];
 
+            for (int k = 0; k < count; k++)
+            {
+                BasicBestiary.Archangel archangel = new BasicBestiary.Archangel(new ConstructionTime() { Hour = 1, Min = 14, Sec = 1 });
+
+                archangel.Type = "Бестиария";
+                archangel.Name = "Грифон";
+                archangel.Investigation = 0;
+                archangel.Attack = 120;
+                archangel.Infantry = 400;
+                archangel.Cavalry = 500;
+                archangel.Magistrate = 600;
+                archangel.Bestiary = 850;
+                archangel.Resources = 267;
+                archangel.Meat = 4;
+                archangel.TraverseSpeed = 12;
+                archangel.gold = 3700;
+                archangel.steel = 1500;
+                archangel.meats = 2300;
+                archangel.amuletsMary = 0;
+                archangel.sapphires = 83;
+
+                archangels[k] = archangel;
+
+            }
+            return archangels;
+        }
         #endregion
-
         #region Потрошитель
+        public BasicBestiary.Eviscerator[] CreateEviscerator(int count)
+        {
+            BasicBestiary.Eviscerator[] eviscerators = new BasicBestiary.Eviscerator[count];
 
+            for (int k = 0; k < count; k++)
+            {
+                BasicBestiary.Eviscerator eviscerator = new BasicBestiary.Eviscerator(new ConstructionTime() { Hour = 1, Min = 14, Sec = 1 });
+
+                eviscerator.Type = "Бестиария";
+                eviscerator.Name = "Грифон";
+                eviscerator.Investigation = 0;
+                eviscerator.Attack = 120;
+                eviscerator.Infantry = 400;
+                eviscerator.Cavalry = 500;
+                eviscerator.Magistrate = 600;
+                eviscerator.Bestiary = 850;
+                eviscerator.Resources = 267;
+                eviscerator.Meat = 4;
+                eviscerator.TraverseSpeed = 12;
+                eviscerator.gold = 3700;
+                eviscerator.steel = 1500;
+                eviscerator.meats = 2300;
+                eviscerator.amuletsMary = 0;
+                eviscerator.sapphires = 83;
+
+                eviscerators[k] = eviscerator;
+
+            }
+            return eviscerators;
+        }
         #endregion
-
-
         #endregion
 
     }

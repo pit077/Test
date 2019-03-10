@@ -53,6 +53,7 @@ namespace Test
             string relicName = " Знак Ярости"; // Имя реликвии 
             string nameArmy = "Копейщик"; // Имя армии
             double attack = 60.0d;
+            DateTime validTime;
             int lvl = 0;
             bool signofrage;
             Console.WriteLine(Onn(ref type, ref relicName, ref nameArmy,ref  attack, ref lvl));

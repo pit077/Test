@@ -23,12 +23,8 @@ namespace Servers
         #region Копейщик
         public class Kopeyshchik : BasicInfantry
         {
-           
-
             public override bool off { get; set; } = true;
             public Kopeyshchik(ConstructionTime constructionTime) : base(constructionTime) { }
-
-            
         }
         #endregion
         #region Лучница
